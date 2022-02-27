@@ -1,0 +1,22 @@
+.nav_links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_links li {
+  margin-right: 2rem;
+}
+
+.nav_links a {
+  color: var(--white);
+  text-transform: capitalize;
+  font-weight: normal;
+  padding: 0.5rem 0;
+  transition: var(--transition);
+}
+
+.nav_links li span {
+  font-size: var(--font-smaller);
+  color: var(--hover);
+  margin-right: 0.3rem;
+}
