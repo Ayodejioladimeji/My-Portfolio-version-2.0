@@ -11,6 +11,9 @@
 # production
 /build
 
+#folder
+constants/
+
 # misc
 .DS_Store
 .env.local

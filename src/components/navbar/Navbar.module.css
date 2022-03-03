@@ -6,12 +6,12 @@
   display: flex;
   align-items: center;
   height: 6rem;
+  /* border-bottom: 1px solid var(--hover); */
 }
 
-.nav_header a h2 {
+.logo_btn {
   color: var(--hover);
-  font-weight: bold;
-  font-family: var(--font-roboto);
+  font-size: var(--font-larger);
 }
 
 /* THE NAV CENTER */

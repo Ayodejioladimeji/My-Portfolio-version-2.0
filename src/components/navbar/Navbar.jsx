@@ -1,6 +1,7 @@
 import React from "react";
 // PACKAGES
 import { Link } from "react-router-dom";
+import { FaUikit } from "react-icons/fa";
 
 // COMPONENTS
 import styles from "./Navbar.module.css";
@@ -12,8 +13,8 @@ const Navbar = () => {
       <div className={styles.nav_center}>
         {/* THE SECTION OF THE HEADER LOGO */}
         <div className={styles.nav_header}>
-          <Link to="/home">
-            <h2>LAYOBRIGHT</h2>
+          <Link to="/">
+            <FaUikit className={styles.logo_btn} />
           </Link>
         </div>
 
