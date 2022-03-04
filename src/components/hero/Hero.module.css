@@ -28,10 +28,30 @@
 
 .hero_left_div h1 {
   font-size: 3.5rem;
-  /* font-weight: bold; */
   font-family: "Alfa Slab One";
-  text-shadow: 1px 1px var(--hover);
   letter-spacing: 8px;
+  position: relative;
+  -webkit-text-stroke: 1px var(--primary);
+  color: transparent;
+  text-transform: uppercase;
+}
+
+.hero_left_div h1::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--hover);
+  width: 0;
+  overflow: hidden;
+  top: 10px;
+  left: -23px;
+  transition: 1s;
+  /* border-right: 8px solid var(--hover); */
+  -webkit-text-stroke: 1px maroon;
+}
+
+.hero_left_div h1:hover::before {
+  width: 100%;
+  filter: drop-shadow(0 0 25px blue);
 }
 
 .hero_left_div h1 small {
@@ -55,65 +75,6 @@
 .social_icon {
   color: var(--primary);
   font-size: var(--font-mid);
-}
-
-.slide {
-  animation: slideRight 6.5s ease-in-out 0.3s forwards;
-}
-.touch {
-  animation: slideRight 6.5s ease-in-out 0.3s forwards;
-}
-.slide1 {
-  animation: slideDown 6.5s ease-in-out 0.3s forwards;
-}
-.type {
-  animation: slideUp 6.5s ease-in-out 0.3s forwards;
-}
-
-.slide:nth-of-type(1) {
-  animation-delay: 1s;
-}
-slide1:nth-of-type(2) {
-  animation-delay: 1.5s;
-}
-.type {
-  animation-delay: 2s;
-}
-.touch:nth-of-type(4) {
-  animation-delay: 1s;
-}
-
-@keyframes slideRight {
-  0% {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideDown {
-  0% {
-    transform: translateY(-200px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(200px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 /* ========================================== */
@@ -170,12 +131,3 @@ slide1:nth-of-type(2) {
   -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
-
-/* .email::before {
-  content: "";
-  position: absolute;
-  top: -15px;
-  border: 35px solid transparent;
-  right: -60px;
-  border-left-color: var(--primary);
-} */
