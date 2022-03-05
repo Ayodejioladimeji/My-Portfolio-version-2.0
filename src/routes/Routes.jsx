@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 // PACKAGES
 import { Switch, Route } from "react-router-dom";
-import Aos from "aos";
 
 // COMPONENTS
 import Home from "../pages/Home";

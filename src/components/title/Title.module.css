@@ -1,0 +1,22 @@
+.section_title {
+  color: var(--clr-primary-5);
+  width: 95vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.section_title h2 {
+  font-size: var(--font-mid);
+  font-family: "Grand Hotel";
+  letter-spacing: 5px;
+}
+
+.underline {
+  height: 0.5px;
+  background: var(--primary);
+  width: 500px;
+  margin-left: 20px;
+}

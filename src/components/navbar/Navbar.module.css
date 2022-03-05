@@ -6,7 +6,20 @@
   display: flex;
   align-items: center;
   height: 6rem;
-  /* border-bottom: 1px solid var(--hover); */
+  z-index: 9999;
+}
+
+.active {
+  background: var(--heros);
+  color: var(--primary) !important;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  height: 6rem;
+  z-index: 9999;
 }
 
 .logo_btn {
@@ -21,4 +34,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 9999;
+}
+
+/* THE SECTION OF THE INDICATOR */
+.indicator {
+  /* background: var(--tetiary); */
+  height: 3px;
+  position: sticky;
+  top: 12%;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+}
+
+.progress {
+  height: 3px;
+  background: var(--violet);
+  transition: var(--transition);
 }

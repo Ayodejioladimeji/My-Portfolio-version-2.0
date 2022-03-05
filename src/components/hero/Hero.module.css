@@ -86,7 +86,7 @@
   justify-content: center;
   background: var(--hero);
   height: 100vh;
-  border-bottom: 3px solid var(--hover);
+  /* border-bottom: 3px solid var(--hover); */
   overflow: hidden;
 }
 
