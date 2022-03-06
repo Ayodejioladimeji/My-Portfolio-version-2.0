@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 // PACKAGES
 import { FaBloggerB, FaProjectDiagram, FaRegUser } from "react-icons/fa";
@@ -7,10 +7,14 @@ import { Link } from "react-router-dom";
 
 // COMPONENTS
 import styles from "./NavTab.module.css";
+import { Context } from "./../../store/Context";
 
 const NavTab = () => {
+  const [state] = useContext(Context);
+  const { scroll } = state;
+
   return (
-    <div className={styles.navtab}>
+    <div className={scroll === 100 ? styles.none : styles.navtab}>
       <div className={styles.navtab_center}>
         <div className={styles.tab_div}>
           <Link to="/about">

@@ -9,6 +9,12 @@ const Reducer = (state, action) => {
         ...state,
         nav: payload,
       };
+
+    case ACTIONS.REMOVE_TAB:
+      return {
+        ...state,
+        scroll: payload,
+      };
     default:
       return state;
   }

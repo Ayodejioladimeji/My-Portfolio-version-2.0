@@ -42,3 +42,7 @@
   background: var(--primary);
   color: var(--heros);
 }
+
+.none {
+  display: none;
+}

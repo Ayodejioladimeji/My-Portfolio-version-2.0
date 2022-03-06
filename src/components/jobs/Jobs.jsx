@@ -18,6 +18,7 @@ const Jobas = () => {
           {jobs.map((item, index) => {
             return (
               <button
+                key={index}
                 onClick={() => setValue(index)}
                 className={`${styles.job_btn} ${
                   index === value && styles.active_btn

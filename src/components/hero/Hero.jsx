@@ -12,9 +12,9 @@ import Particle from "../particles/Particles";
 
 const Hero = () => {
   useEffect(() => {
-    console.log("the game has just began");
     Aos.init({ duration: 1500 });
   }, []);
+
   return (
     <>
       <Particle />

@@ -8,6 +8,7 @@ import Project from "./Project";
 import data from "../../constants/projects";
 import styles from "./Projects.module.css";
 import Title from "./../title/Title";
+import Button from "./../button/Button";
 
 const Projects = ({ title }) => {
   const [projects] = useState(data);
@@ -23,13 +24,9 @@ const Projects = ({ title }) => {
         })}
       </div>
 
-      <div className={styles.allproject_button}>
-        <Link
-          to="/projects"
-          className={`${styles.btn} ${styles.center_btn}`}
-          data-aos="fade-up"
-        >
-          All projects
+      <div className={styles.center_btn}>
+        <Link to="/projects">
+          <Button text="All Projects" />
         </Link>
       </div>
     </section>

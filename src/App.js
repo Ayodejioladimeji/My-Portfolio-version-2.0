@@ -7,6 +7,7 @@ import Routes from "./routes/Routes";
 import Navbar from "./components/navbar/Navbar";
 import styles from "./App.module.css";
 import Onboarding from "./components/onboarding/Onboarding";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [pageLoad, setPageLoad] = useState(false);
@@ -29,6 +30,7 @@ function App() {
       <div className={styles.main}>
         <Navbar />
         <Routes />
+        <Footer />
       </div>
     </Router>
   );
