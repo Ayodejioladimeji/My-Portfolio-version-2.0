@@ -12,7 +12,7 @@
   --white: #fff;
   --bcg: rgb(3, 1, 10);
   --hero: rgba(10, 3, 34, 0.123);
-  --heros: rgba(10, 3, 34, 0.726);
+  --heros: rgb(5, 1, 19);
   --violet: violet;
   --primary: #2caeba;
   --secondary: #16538a;
@@ -35,9 +35,11 @@
   --font-larger: 40px;
   --font-largest: 50px;
 
+  /* SPACING */
+  --spacing: 3px;
+
   /* SHADOWS AND TRANSITIONS */
   --shadows: 0px 22px 24px rgba(65, 111, 244, 0.2);
-  /* --shadoos: 0px 6px 18px rgba(154, 155, 156, 0.15); */
   --shadoos: 0px 0px 7px rgba(65, 111, 65, 0.2);
   --transition: all 0.3s linear;
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 // PACKAGES
 import { Link } from "react-router-dom";
 import { FaUikit } from "react-icons/fa";
@@ -6,19 +6,25 @@ import { FaUikit } from "react-icons/fa";
 // COMPONENTS
 import styles from "./Navbar.module.css";
 import NavLinks from "./../navlinks/NavLinks";
+import { Context } from "./../../store/Context";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [state, dispatch] = useContext(Context);
+  const { nav } = state;
+
   const [scroll, setScroll] = useState(0);
 
   // CHANGE BACKGROUND ON SCROLL
-  const changeBackground = () => {
-    if (window.scrollY >= 10) {
-      setNav(true);
-    } else {
-      setNav(false);
-    }
-  };
+  useEffect(() => {
+    const removeNav = () => {
+      if (window.scrollY >= 10) {
+        dispatch({ type: "REMOVE_NAV", payload: true });
+      } else {
+        dispatch({ type: "REMOVE_NAV", payload: false });
+      }
+    };
+    window.addEventListener("scroll", removeNav);
+  }, [dispatch]);
 
   // SCROLL INDICATOR
   const onScroll = () => {
@@ -33,7 +39,6 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", changeBackground);
     window.addEventListener("scroll", onScroll);
 
     return () => window.removeEventListener("scroll", onScroll);
@@ -51,7 +56,7 @@ const Navbar = () => {
           </div>
 
           {/* THE SECTION OF THE NAVBAR LINKS */}
-          <NavLinks />
+          {!nav ? <NavLinks /> : <h3>LAYOBRIGHT</h3>}
         </div>
       </nav>
 

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import services from "../../constants/services";
 import styles from "./Services.module.css";
 import Title from "./../title/Title";
+import NavTab from "../navtab/NavTab";
+import { Context } from "./../../store/Context";
 
 const Services = () => {
+  const [state] = useContext(Context);
+  const { nav } = state;
   return (
     <section className={styles.section}>
       <Title title="What I Offer" />
@@ -30,6 +34,8 @@ const Services = () => {
           );
         })}
       </div>
+
+      {nav && <NavTab />}
     </section>
   );
 };
