@@ -1,5 +1,5 @@
 .section_title {
-  color: var(--clr-primary-5);
+  color: var(--white);
   width: 95vw;
   max-width: 1170px;
   margin: 0 auto;
@@ -12,6 +12,16 @@
   font-size: var(--font-mid);
   font-family: "Grand Hotel";
   letter-spacing: 5px;
+}
+
+.section_title h2 span {
+  height: 40px;
+  width: 40px;
+  /* border-radius: 50%; */
+  border: 2px solid var(--violet);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .underline {

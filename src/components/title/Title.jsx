@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./Title.module.css";
 
-const Title = ({ title }) => {
+const Title = ({ title, length }) => {
   return (
     <div className={styles.section_title}>
       <h2 data-aos="fade-down" data-aos-once="true">

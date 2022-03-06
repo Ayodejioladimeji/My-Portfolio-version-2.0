@@ -15,12 +15,13 @@
   --heros: rgb(5, 1, 19);
   --violet: violet;
   --primary: #2caeba;
-  --secondary: #16538a;
+  --secondary: #2568a34d;
   --tetiary: #242424;
   --hover: #00ff00;
 
   /* THE FONT-FAMILIES */
   --font-oxygen: "Oxygen";
+  --radius: 0.25rem;
 
   /* FONT SIZES */
   --font-smallest: 10px;
