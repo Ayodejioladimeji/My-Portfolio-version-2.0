@@ -17,7 +17,7 @@ const NavTab = () => {
     <div className={scroll === 100 ? styles.none : styles.navtab}>
       <div className={styles.navtab_center}>
         <div className={styles.tab_div}>
-          <Link to="/about">
+          <Link to="/profile">
             <FaRegUser />
           </Link>
         </div>
