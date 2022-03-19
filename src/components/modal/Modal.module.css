@@ -1,0 +1,112 @@
+.modalBackground {
+  width: 100vw;
+  height: 100%;
+  background: rgba(17, 15, 15, 0.801);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modalContainer {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  background: var(--heros);
+  box-shadow: var(--shadoos);
+  padding: 20px;
+  margin-top: 70px;
+}
+
+.modalContainer h3 {
+  text-align: center;
+  font-size: var(--font-med);
+}
+
+.rating_img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.rating_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form_group {
+  width: 100%;
+}
+
+.form_label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: var(--font-smalling);
+}
+
+.form_group select,
+.form_group input {
+  padding: 13px 10px;
+  width: 100%;
+  outline: none;
+  font-size: var(--font-small);
+  color: var(--white);
+  background: transparent;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border: 1px solid var(--primary);
+}
+
+.form_group textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  outline: none;
+  color: var(--white);
+  background: transparent;
+  font-size: var(--font-small);
+  resize: none;
+  border: 1px solid var(--primary);
+}
+
+.button_div {
+  width: 100%;
+}
+
+.button_div button {
+  width: 100%;
+  padding: 13px;
+  background: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--primary);
+  outline: none;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.button_div button:hover {
+  background: var(--violet);
+}
+
+/* The media query */
+@media screen and (min-width: 1000px) {
+  .modalContainer {
+    width: 50%;
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .modalContainer {
+    background: orange;
+    width: 100%;
+    max-width: 420px;
+  }
+}

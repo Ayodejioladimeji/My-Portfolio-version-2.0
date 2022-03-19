@@ -15,6 +15,19 @@ const Reducer = (state, action) => {
         ...state,
         scroll: payload,
       };
+
+    case ACTIONS.OPEN_MODAL:
+      return {
+        ...state,
+        modal: payload,
+      };
+
+    case ACTIONS.LANGUAGE_OPEN_MODAL:
+      return {
+        ...state,
+        language_open_modal: payload,
+      };
+
     default:
       return state;
   }

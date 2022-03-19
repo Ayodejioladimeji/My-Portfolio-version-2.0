@@ -20,12 +20,16 @@ const stack = [
     stack: "TYPESCRIPT",
   },
   {
+    id: "5",
+    stack: "GATSBY",
+  },
+  {
     id: "4",
     stack: "REACTNATIVE",
   },
   {
-    id: "5",
-    stack: "GATSBY",
+    id: "11",
+    stack: "GIT",
   },
   {
     id: "12",
@@ -51,10 +55,7 @@ const stack = [
     id: "10",
     stack: "SQL",
   },
-  {
-    id: "11",
-    stack: "GIT",
-  },
+ 
 ];
 
 export default stack;

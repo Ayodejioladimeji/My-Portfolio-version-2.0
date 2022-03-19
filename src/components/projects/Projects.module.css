@@ -73,11 +73,25 @@
 .project_desc button {
   background: transparent;
   color: var(--primary);
-  border: none;
   outline: none;
   margin-left: 10px;
   cursor: pointer;
   text-decoration: underline;
+  background: var(-bcg);
+  padding: 6px 10px;
+  border-radius: 25px;
+  border: 1px outset var(--hover);
+}
+
+.project_desc button{
+  text-decoration:none;
+  transition:var(--transition)
+}
+
+.project_desc button:hover{
+  background:var(--primary);
+  color:var(--white);
+  transition:var(--transition)
 }
 
 .project_stack {
@@ -116,7 +130,7 @@
   margin-top: 3rem;
   transition: var(--transition);
 }
-
+/* 
 .btn {
   background: transparent;
   border: 1px solid var(--hover);
@@ -134,7 +148,7 @@
   transform: scale(1);
   transition: var(--transition);
   color: var(--white);
-}
+} */
 
 /* ===========THE MEDIA QUERY============ */
 @media screen and (min-width: 576px) {

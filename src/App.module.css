@@ -51,21 +51,6 @@ body {
   color: var(--white);
 }
 
-body::-webkit-scrollbar {
-  width: 12px;
-}
-
-/* Track */
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
-
-/* Handle */
-body::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-}
-
 ul {
   list-style-type: none;
 }

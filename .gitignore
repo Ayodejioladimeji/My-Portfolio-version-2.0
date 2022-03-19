@@ -12,7 +12,7 @@
 /build
 
 #folder
-# constants/
+constants/
 
 # misc
 .DS_Store

@@ -7,10 +7,12 @@ import { FaUikit } from "react-icons/fa";
 import styles from "./Navbar.module.css";
 import NavLinks from "./../navlinks/NavLinks";
 import { Context } from "./../../store/Context";
+import LanguageModal from "../languagemodal/LanguageModal";
+import HeaderTab from "../headertab/HeaderTab";
 
 const Navbar = () => {
   const [state, dispatch] = useContext(Context);
-  const { nav, scroll } = state;
+  const { nav, scroll, language_open_modal } = state;
 
   // CHANGE BACKGROUND ON SCROLL
   useEffect(() => {
@@ -54,14 +56,10 @@ const Navbar = () => {
           </div>
 
           {/* THE SECTION OF THE NAVBAR LINKS */}
-          {!nav ? (
-            <NavLinks />
-          ) : (
-            <div className={styles.heading}>
-              <h3>LAYOBRIGHT</h3>
-            </div>
-          )}
+          {!nav ? <NavLinks /> : <HeaderTab />}
         </div>
+
+        {language_open_modal && <LanguageModal />}
       </nav>
 
       {/* {nav && ( */}

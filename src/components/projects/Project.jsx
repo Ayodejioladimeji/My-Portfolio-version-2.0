@@ -31,7 +31,7 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
           <a href={github}>
             <FaGithubSquare className={styles.project_icon} />
           </a>
-          <a href={url} target="_blank" rel="noreferrer">
+          <a href={url} target="_blank" rel="noopener noreferrer">
             <FaShareSquare className={styles.project_icon} />
           </a>
         </div>

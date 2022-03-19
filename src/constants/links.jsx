@@ -6,8 +6,8 @@ export const links = [
   },
   {
     id: 2,
-    text: "about",
-    url: "/about/",
+    text: "profile",
+    url: "/about",
   },
   {
     id: 3,
@@ -17,11 +17,6 @@ export const links = [
   {
     id: 4,
     text: "blog",
-    url: "/blog/",
-  },
-  {
-    id: 5,
-    text: "contact",
-    url: "/contact/",
+    url: "/blogs",
   },
 ];
