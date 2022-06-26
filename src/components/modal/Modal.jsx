@@ -6,10 +6,11 @@ import React, { useState, useContext, useRef } from "react";
 import styles from "./Modal.module.css";
 import { Context } from "./../../store/Context";
 import ratingImg from "../../assets/rating.png";
+import { postDataApi } from "../../utils/fetchData";
 
 // initial state
 const initialState = {
-  fname: "",
+  fullname: "",
   rating: "",
   comment: "",
   err: "",
@@ -19,7 +20,7 @@ const Modal = () => {
   const [state, dispatch] = useContext(Context);
   const [rate, setRate] = useState(initialState);
   const clickRef = useRef();
-  const { rating, comment, fname, err } = rate;
+  const { rating, comment, fullname, err } = rate;
 
   // the handleChange function
   const handleChange = (e) => {
@@ -39,6 +40,18 @@ const Modal = () => {
 
   window.document.addEventListener("mousedown", handleClickOutside);
 
+  // The HandleSubmit Function
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await postDataApi("rating", rate);
+      console.log(res);
+      dispatch({ type: "CREATE_REVIEW", payload: res });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <div className={styles.modalBackground}>
       <div className={styles.modalContainer} ref={clickRef}>
@@ -47,16 +60,16 @@ const Modal = () => {
           <img src={ratingImg} alt="rating-pic" />
         </div>
 
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className={styles.form_group}>
             <label htmlFor="fname" className={styles.form_label}>
               Your name
             </label>
             <input
               type="text"
-              id="fname"
-              value={fname}
-              name="fname"
+              id="fullname"
+              value={fullname}
+              name="fullname"
               placeholder="Enter your name"
               onChange={handleChange}
             />

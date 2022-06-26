@@ -56,6 +56,7 @@ const Navbar = () => {
           </div>
 
           {/* THE SECTION OF THE NAVBAR LINKS */}
+          {/* {!nav && <NavLinks />} */}
           {!nav ? <NavLinks /> : <HeaderTab />}
         </div>
 

@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // PACKAGES
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 
 // COMPONENTS
 import Home from "../pages/Home";
@@ -10,6 +11,17 @@ import About from "./../pages/About";
 import Blogs from "./../pages/Blogs";
 
 const Routes = () => {
+  const { pathname } = useLocation();
+
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
+  // Scroll page to top when route changes
+  useEffect(() => {
+    scrollToTop();
+  }, [pathname]);
+
   return (
     <Switch>
       {/* <Route path="/" exact component={Onboarding} /> */}

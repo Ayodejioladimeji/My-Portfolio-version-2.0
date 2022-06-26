@@ -18,8 +18,32 @@
   border-radius: 10px;
   background: var(--heros);
   box-shadow: var(--shadoos);
-  padding: 20px;
+  padding: 40px;
   margin-top: 70px;
+}
+
+.modal_box {
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+}
+
+.modal_box button {
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--white);
+  width: 400px;
+}
+
+.modal_box button img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* The media query */

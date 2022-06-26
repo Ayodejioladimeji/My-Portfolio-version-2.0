@@ -1,7 +1,12 @@
 import React, { useContext } from "react";
 
 // PACKAGES
-import { FaBloggerB, FaProjectDiagram, FaRegUser } from "react-icons/fa";
+import {
+  FaBloggerB,
+  FaHome,
+  FaProjectDiagram,
+  FaRegUser,
+} from "react-icons/fa";
 import { BsStar } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
@@ -17,32 +22,30 @@ const NavTab = () => {
   return (
     <div className={scroll === 100 ? styles.none : styles.navtab}>
       <div className={styles.navtab_center}>
-        <div className={styles.tab_div}>
-          <Link to="/profile">
+        <Link to="/">
+          <div className={styles.tab_div}>
+            <FaHome />
+          </div>
+        </Link>
+
+        <Link to="/about">
+          <div className={styles.tab_div}>
             <FaRegUser />
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        <div className={styles.tab_div}>
-          <Link to="/projects">
+        <Link to="/projects">
+          <div className={styles.tab_div}>
             <FaProjectDiagram />
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        <div className={styles.tab_div}>
-          <Link to="/blog">
+        <Link to="/blogs">
+          <div className={styles.tab_div}>
             <FaBloggerB />
-          </Link>
-        </div>
-
-        <div className={styles.tab_div}>
-          <BsStar
-            onClick={() => dispatch({ type: "OPEN_MODAL", payload: !modal })}
-          />
-        </div>
+          </div>
+        </Link>
       </div>
-
-      {modal && <Modal />}
     </div>
   );
 };

@@ -28,6 +28,12 @@ const Reducer = (state, action) => {
         language_open_modal: payload,
       };
 
+    case ACTIONS.CREATE_REVIEW:
+      return {
+        ...state,
+        data: { ...state, payload },
+      };
+
     default:
       return state;
   }

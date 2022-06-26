@@ -8,6 +8,7 @@ const initialState = {
   scroll: 0,
   modal: false,
   language_open_modal: false,
+  data: {},
 };
 
 export const ContextProvider = ({ children }) => {

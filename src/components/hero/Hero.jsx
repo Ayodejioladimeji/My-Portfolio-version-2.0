@@ -22,7 +22,7 @@ const Hero = () => {
         <div className={styles.hero_left}>
           <div className={styles.hero_left_div}>
             <h2 className={styles.slide}>I'm</h2>
-            <h1 data-text=" &nbsp;Layobright" className={styles.slide1}>
+            <h1 data-text=" &nbsp;Layobright" className={styles.slide1}> 
               Layobright<small>.</small>
               &nbsp;
             </h1>
