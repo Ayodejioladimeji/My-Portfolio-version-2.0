@@ -8,6 +8,7 @@ const ChatwootWidget = () => {
       position: "right",
       locale: "en",
       type: "expanded_bubble",
+      launcherTitle: "Chat with me",
     };
     (function (d, t) {
       var BASE_URL = "https://app.chatwoot.com";

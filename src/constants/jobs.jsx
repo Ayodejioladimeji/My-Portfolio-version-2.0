@@ -1,9 +1,40 @@
 const jobs = [
   {
-    id: "recAGJfiU4C45aV0HL",
+    id: "6",
+    order: 6,
+    title: "Project Lead Developer",
+    dates: "MAR 2022 - JUNE 2022",
+    duties: [
+      "Work in a multidisciplinary team with other professionals such as backend developers and web designers",
+      "Worked as a project lead to implement 92% of business requirements and built a useful system to drive results",
+      "Always stay consistent with our brand guidelines and test the website for usability",
+      "Bridged the gap between graphic design and technical implementation by working on both sides and helping define 16+ applications' look and feel",
+      "Make suggestions for better solutions to problems and ensure browser compatibility",
+      "Implemented web performance optimizations and ensured web pages conformed to accessibility standards",
+      "Translated 10+ UI/UX designs to code resulting in the visual elements of the application",
+    ],
+    company: "Ultainfinity GG",
+  },
+  {
+    id: "5",
+    order: 5,
+    title: "Frontend Developer",
+    dates: "JULY 2021 - DEC 2021",
+    duties: [
+      "Collaborating closely with the team to support projects during all phases of delivery.",
+      "Identifying innovative ideas and proof of concepts according to project requirements.",
+      "Communicating technical issues in an understandable manner to the team",
+      "Maintaining an organized workflow using a project management tool (like GitHub).",
+      "Monitoring our web app performance and rectifying front-end-related issues.",
+      "Testing to identify bugs and technical issues before and after deploying.",
+    ],
+    company: "TiideLab",
+  },
+  {
+    id: "4",
     order: 4,
     title: "Fullstack Developer",
-    dates: "JUNE 2021 - PRESENT",
+    dates: "MAY 2021 - OCT 2021",
     duties: [
       "Responsible for end-to-end web app development and creative backend engineering",
       "Developed a full-stack web applications which processed analyzed and rendered data visually.",
@@ -13,10 +44,10 @@ const jobs = [
     company: "Lighthillng",
   },
   {
-    id: "recAGJfiU4CeaV0HL",
+    id: "3",
     order: 3,
     title: "Frontend Developer",
-    dates: "AUG 2020 - MARCH 2021",
+    dates: "AUG 2020 - APRIL 2021",
     duties: [
       "Collaborated with Developers across Africa to work on projects using variety of tools which includes-:HTML, Javascript, Bootstrap, Css, React and Gatsby.",
       "Manage complex details about projects that require analyzing design requirements.",
@@ -26,7 +57,7 @@ const jobs = [
     company: "Devcareer",
   },
   {
-    id: "recIL6mJNfWObonls",
+    id: "2",
     order: 2,
     title: "Web Developer(Intern)",
     dates: "AUG 2019 - JULY 2020",
@@ -39,7 +70,7 @@ const jobs = [
     company: "Dots ict",
   },
   {
-    id: "rec61x18GVY99hQq5",
+    id: "1",
     order: 1,
     title: "Frontend Intern",
     dates: "FEB 2019 - JUNE 2019",

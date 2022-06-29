@@ -1,33 +1,33 @@
 const blog = [
   {
     id: "1",
-    url: "https://blog.devcareer.io/step-by-step-react-counter-tutorial-for-absolute-beginners-ckfpj8n5u00nh5ts144s01oj1",
-    desc: "STEP BY STEP REACT COUNTER TUTORIAL FOR ABSOLUTE BEGINNERS",
+    url: "https://layobright.hashnode.dev/understanding-the-basics-of-object-oriented-programming-as-a-beginner",
+    desc: "Understanding the basics of Object Oriented Programming as a Beginner",
     slug: "READ",
     image:
-      "https://res.cloudinary.com/devsource/image/upload/v1614948374/portfolio/counter_hpeycc.jpg",
-    title: "React Counter",
-    github: "https://github.com/Ayodejioladimeji/reactapp",
+      "https://res.cloudinary.com/devsource/image/upload/v1656527339/portfolio/oop_uzeuhk.webp",
+    title: "Object Oriented Programming",
+    github: "https://github.com/Ayodejioladimeji",
   },
   {
     id: "2",
-    url: "https://blog.devcareer.io/step-by-step-react-counter-tutorial-for-absolute-beginners-ckfpj8n5u00nh5ts144s01oj1",
-    desc: "STEP BY STEP REACT COUNTER TUTORIAL FOR ABSOLUTE BEGINNERS",
+    url: "https://layobright.hashnode.dev/understanding-the-basics-of-object-oriented-programming-as-a-beginner",
+    desc: "Understanding the basics of Object Oriented Programming as a Beginner",
     slug: "READ",
     image:
-      "https://res.cloudinary.com/devsource/image/upload/v1614948374/portfolio/counter_hpeycc.jpg",
-    title: "React Counter",
-    github: "https://github.com/Ayodejioladimeji/reactapp",
+      "https://res.cloudinary.com/devsource/image/upload/v1656527339/portfolio/oop_uzeuhk.webp",
+    title: "Object Oriented Programming",
+    github: "https://github.com/Ayodejioladimeji",
   },
   {
     id: "3",
-    url: "https://blog.devcareer.io/step-by-step-react-counter-tutorial-for-absolute-beginners-ckfpj8n5u00nh5ts144s01oj1",
-    desc: "STEP BY STEP REACT COUNTER TUTORIAL FOR ABSOLUTE BEGINNERS",
+    url: "https://layobright.hashnode.dev/understanding-the-basics-of-object-oriented-programming-as-a-beginner",
+    desc: "Understanding the basics of Object Oriented Programming as a Beginner",
     slug: "READ",
     image:
-      "https://res.cloudinary.com/devsource/image/upload/v1614948374/portfolio/counter_hpeycc.jpg",
-    title: "React Counter",
-    github: "https://github.com/Ayodejioladimeji/reactapp",
+      "https://res.cloudinary.com/devsource/image/upload/v1656527339/portfolio/oop_uzeuhk.webp",
+    title: "Object Oriented Programming",
+    github: "https://github.com/Ayodejioladimeji",
   },
 ];
 

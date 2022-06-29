@@ -5,12 +5,14 @@ import styles from "../components/blog/Blogs.module.css";
 import Blog from "./../components/blog/Blog";
 import data from "../constants/blog";
 import Title from "./../components/title/Title";
+import Particle from "./../components/particles/Particles";
 
 export const Blogs = () => {
   const [blogs] = useState(data);
 
   return (
     <section className={styles.blog_section}>
+      <Particle />
       <div className={styles.blog_box}>
         <Title title="All Blogs" />
         <div className={styles.blogs_center}>

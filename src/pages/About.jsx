@@ -3,10 +3,12 @@ import about from "../constants/about";
 import styles from "../components/about/About.module.css";
 import AboutMe from "../components/about/About";
 import Title from "../components/title/Title";
+import Particle from "./../components/particles/Particles";
 
 const About = () => {
   return (
     <section className={styles.about_page}>
+      <Particle />
       <div className={styles.about_box}>
         <Title title="About Me" />
         <div className={styles.about_center}>

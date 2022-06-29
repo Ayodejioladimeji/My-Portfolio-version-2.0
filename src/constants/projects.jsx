@@ -1,6 +1,60 @@
 const projects = [
   {
-    id: "recAGrffUtrhtaV0J",
+    id: "21",
+    order: 21,
+    title: "WealthHat",
+    stack:
+      "REACT, CSS-MODULES, CHATWOOT,NODEJS, EXPRESS, HEROKU, DIGITAL OCEAN ",
+    description:
+      "Application still under development => An investment advisor that’s focused on you",
+    github: "https://github.com/Ayodejioladimeji",
+    url: "https://wealth-hat.herokuapp.com",
+    image:
+      "https://res.cloudinary.com/devsource/image/upload/v1656528835/portfolio/wealth_mw1qcj.png",
+    featured: true,
+  },
+  {
+    id: "20",
+    order: 20,
+    title: "lakesi Global Travel",
+    stack: "REACT, CSS, CHATWOOT ",
+    description:
+      "To make travel and vacation plans simple, affordable, and enjoyable by providing our customers with world-class professionally managed skills in travel and tourism.",
+    github: "https://github.com/Ayodejioladimeji",
+    url: "https://lakesiglobaltravel.com",
+    image:
+      "https://res.cloudinary.com/devsource/image/upload/v1656504175/portfolio/project-three_lagph7.png",
+    featured: true,
+  },
+  {
+    id: "19",
+    order: 19,
+    title: "Connects Chat App",
+    stack:
+      "REACT, CSS, SOCKET.IO, NODE, HEROKU, EXPRESS.JS, STYLED COMPONENTS ",
+    description:
+      "Connect Chat App is a social messenger for connecting people together without stress",
+    github: "https://github.com/Ayodejioladimeji",
+    url: "https://connects-chat-app.herokuapp.com",
+    image:
+      "https://res.cloudinary.com/devsource/image/upload/v1656504175/portfolio/project-two_dlwqol.png",
+    featured: true,
+  },
+  {
+    id: "18",
+    order: 18,
+    title: "Teachify",
+    stack: "REACT, CSS, FRAMER-MOTION, NODE, HEROKU, EXPRESS.JS, BOOTSTRAP ",
+    description:
+      "Teachify is a platform where students will learn a particular available course at a time and after completing the course, student will be eligible for online assessment and after completing the exam, a completion certificate will be automatically...",
+    github: "https://github.com/Ayodejioladimeji",
+    url: "https://glitters-teachify.herokuapp.com",
+    image:
+      "https://res.cloudinary.com/devsource/image/upload/v1656504181/portfolio/project-one_jvk8lz.png",
+    featured: true,
+  },
+  {
+    id: "17",
     order: 17,
     title: "Mr Adeyinka",
     stack: "REACT, CSS, FRAMER-MOTION, NODE, HEROKU, EXPRESS.JS ",
@@ -13,7 +67,7 @@ const projects = [
     featured: true,
   },
   {
-    id: "recAGrffUtrheaV0J",
+    id: "16",
     order: 16,
     title: "Voting2023",
     stack: "REACT, CSS, FRAMER-MOTION, NODE, HEROKU, NETLIFY",
@@ -26,7 +80,7 @@ const projects = [
     featured: true,
   },
   {
-    id: "recAGrffdw4heaV0J",
+    id: "15",
     order: 15,
     title: "LighthillNg",
     stack: "REACT, CSS, FRAMER-MOTION, REACT-ANIMATIONS, NODE, NODEMAILER ",
@@ -39,7 +93,7 @@ const projects = [
     featured: true,
   },
   {
-    id: "recAGrffU4heaV0J",
+    id: "14",
     order: 14,
     title: "Zuri Chat",
     stack: "REACT, CSS, FRAMER-MOTION, CHAT-ENGINE, STYLED-COMPONENT, NETLIFY",
@@ -51,7 +105,7 @@ const projects = [
       "https://res.cloudinary.com/devsource/image/upload/v1620538067/Screenshot_2021-05-09_at_6.25.39_AM_txpfzy.png",
   },
   {
-    id: "recAGrffU4heaV0J",
+    id: "13",
     order: 13,
     title: "MAMAZEE CLOTHING",
     stack: "REACT, CSS, NODE-JS, BOOTSTRAP, HEROKU-APP",
@@ -64,7 +118,7 @@ const projects = [
     featured: true,
   },
   {
-    id: "recAGrffU4heaV0J",
+    id: "12",
     order: 12,
     title: "THE LIGHT CHURCH OF CHRIST OLUWANISOLA",
     stack: "REACT, CSS, BOOTSTRAP, NETLIFY, SENDGRID",
@@ -77,7 +131,7 @@ const projects = [
     featured: true,
   },
   {
-    id: "recAGrfiU4heAV0J",
+    id: "11",
     order: 11,
     title: "DAILY SCHEDULER",
     stack: "HTML, CSS, JAVASCRIPT, PHP, MYSQL, WEBHOST",
@@ -89,7 +143,7 @@ const projects = [
       "https://res.cloudinary.com/devsource/image/upload/v1614948384/portfolio/todo_c8rn7a.png",
   },
   {
-    id: "recAGrfiU4heDV0J",
+    id: "10",
     order: 10,
     title: "CRYPTO TRACKER",
     stack: "REACT, CSS , BOOTSTRAP, NETLIFY",
@@ -101,7 +155,7 @@ const projects = [
       "https://res.cloudinary.com/devsource/image/upload/v1614948382/portfolio/tra_fixw7x.png",
   },
   {
-    id: "recAGrfiU4heaV0H",
+    id: "9",
     order: 9,
     title: "HOME AND AWAY",
     stack: "REACT, CSS , BOOTSTRAP, STYLED-COMPONENT, NETLIFY",
@@ -113,7 +167,7 @@ const projects = [
       "https://res.cloudinary.com/devsource/image/upload/v1614948374/portfolio/away_fqubqi.png",
   },
   {
-    id: "recAGJfiU4heaV0H",
+    id: "8",
     order: 8,
     title: "BUY.COM",
     stack: "REACT, CSS , BOOTSTRAP, STYLED-COMPONENT, NETLIFY",
@@ -125,7 +179,7 @@ const projects = [
       "https://res.cloudinary.com/devsource/image/upload/v1614948375/portfolio/buy_gewjkt.png",
   },
   {
-    id: "recAGJfiU4CeaV0H",
+    id: "7",
     order: 7,
     title: "WEATHER TRACKER",
     stack: "HTML, CSS, JAVASCRIPT, JQUERY, NETLIFY",
@@ -137,7 +191,7 @@ const projects = [
       "https://res.cloudinary.com/devsource/image/upload/v1614948383/portfolio/tracker_wafyjj.png",
   },
   {
-    id: "recAGJfiU4CeaV0H",
+    id: "6",
     order: 6,
     title: "SAKINWUMI LIMITED -- still under construction",
     stack: "GATSBY, CSS , GRID-SYSTEM, NETLIFY",
@@ -149,7 +203,7 @@ const projects = [
       "https://res.cloudinary.com/devsource/image/upload/v1614948387/portfolio/same_w2i8lf.png",
   },
   {
-    id: "recAGJfiU4CeaVHL",
+    id: "5",
     order: 5,
     title: "DEVCAREER V2",
     stack: "GATSBY, SASS, CSS , BOOTSTRAP, NETLIFY",
@@ -161,7 +215,7 @@ const projects = [
       "https://res.cloudinary.com/devsource/image/upload/v1614948376/portfolio/devcareer_suizgf.png",
   },
   {
-    id: "recAGJfiU4CaV0HL",
+    id: "4",
     order: 4,
     title: "FREE VIDEOS MOBILE APP",
     stack: "REACTNATIVE",
@@ -174,7 +228,7 @@ const projects = [
       "https://res.cloudinary.com/devsource/image/upload/v1614948382/portfolio/native_ea4lcx.png",
   },
   {
-    id: "recAGJfiU4eaV0HL",
+    id: "3",
     order: 3,
     title: "FREE VIDEOS",
     stack: "REACT, CSS , BOOTSTRAP, NETLIFY",
@@ -186,7 +240,7 @@ const projects = [
       "https://res.cloudinary.com/devsource/image/upload/v1614948383/portfolio/one_k7timq.png",
   },
   {
-    id: "recAGJfiUCeaV0HL",
+    id: "2",
     order: 2,
     title: "MAMA ZEE",
     stack: "JAVASCRIPT, CSS , PHP, BOOTSTRAP , JQUERY ,WEBHOST",
@@ -198,7 +252,7 @@ const projects = [
       "https://res.cloudinary.com/devsource/image/upload/v1614948375/portfolio/mamazee_llqfnl.png",
   },
   {
-    id: "recGJfiU4CeaV0HL",
+    id: "1",
     order: 1,
     title: "MOVIES APP",
     stack: "REACT, CSS , BOOTSTRAP, NETLIFY",
@@ -210,7 +264,7 @@ const projects = [
       "https://res.cloudinary.com/devsource/image/upload/v1614948380/portfolio/movies_rlvvls.png",
   },
   {
-    id: "recAGJfiU4CeaVHL",
+    id: "0",
     order: 0,
     title: "WEB PORTFOLIO",
     stack: "HTML, JAVASCRIPT, CSS , SCSS, JQUERY",

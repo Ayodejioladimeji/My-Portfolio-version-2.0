@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { useTranslation } from "react-i18next";
+import React from "react";
+// import { useTranslation } from "react-i18next";
 
 // COMPONENTS
 import styles from "./HeaderTab.module.css";
@@ -10,7 +10,7 @@ const HeaderTab = () => {
   // const [state, dispatch] = useContext(Context);
   // const { language_open_modal } = state;
 
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   // save language
   // const saveLang = (lang) => {
@@ -51,7 +51,13 @@ const HeaderTab = () => {
       </select> */}
 
       <div className={styles.heading}>
-        <img src={gmail} alt="" />
+        <a
+          href="mailto:alayosingers@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={gmail} alt="" />
+        </a>
       </div>
     </div>
   );
