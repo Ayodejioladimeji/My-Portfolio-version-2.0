@@ -8,12 +8,16 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
   const [readMore, setReadMore] = useState(false);
 
   return (
-    <article className={styles.project}>
+    <article data-aos="zoom-in" data-aos-once="true" className={styles.project}>
       <div className={styles.project_img}>
         <img src={image} alt="project" />
       </div>
 
-      <div className={styles.project_info}>
+      <div
+        data-aos="fade-down"
+        data-aos-once="true"
+        className={styles.project_info}
+      >
         <h3>{title || "default title"}</h3>
 
         <p className={styles.project_desc}>

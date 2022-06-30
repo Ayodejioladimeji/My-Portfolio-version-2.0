@@ -2,15 +2,16 @@ import React, { useState, useEffect, useRef } from "react";
 
 // PACKAGES
 import Typewriter from "typewriter-effect";
-import { FiPower } from "react-icons/fi";
 
 // COMPONENTS
 import styles from "./Onboarding.module.css";
 import Particles from "../particles/Particles";
+import car from "../../assets/car.png";
 // import car from "../../assets/car.png";
 
-const Onboarding = ({ pageLoad, setPageLoad }) => {
+const Onboarding = () => {
   const [progress, setProgress] = useState(0);
+  const [slide, setSlide] = useState(false);
   const id = useRef(null);
 
   const clear = () => {
@@ -18,16 +19,15 @@ const Onboarding = ({ pageLoad, setPageLoad }) => {
   };
 
   useEffect(() => {
-    if (pageLoad) {
-      id.current = window.setInterval(() => {
-        setProgress((progress) => progress + 10);
-      }, 900);
-      return () => clear();
-    }
-  }, [pageLoad]);
+    id.current = window.setInterval(() => {
+      setProgress((progress) => progress + 1);
+    }, 140);
+    return () => clear();
+  }, []);
 
   useEffect(() => {
     if (progress === 100) {
+      setSlide(true);
       clear();
     }
   }, [progress]);
@@ -37,33 +37,35 @@ const Onboarding = ({ pageLoad, setPageLoad }) => {
       <div className={styles.onboard_div}>
         <Particles />
 
-        {!pageLoad ? (
-          <div className={styles.switch}>
-            <FiPower
-              onClick={() => setPageLoad(true)}
-              className={styles.switch_icon}
-            />
-          </div>
-        ) : (
-          <>
-            <div className={styles.type}>
-              <Typewriter
-                options={{
-                  strings: ["Thank you for contacting Layobright"],
-                  autoStart: true,
-                  loop: true,
-                  delay: 200,
-                  pauseFor: 1112500,
-                }}
-              />
-            </div>
+        <div
+          data-aos="zoom-in"
+          data-aos-once="true"
+          className={styles.box}
+        ></div>
+        <div className={styles.progress_strength}>
+          {/* <progress max="100" value={progress} className="strength" /> */}
+          <small data-aos="fade-in" data-aos-once="true">
+            {progress}% Complete
+          </small>
+        </div>
 
-            <div className={styles.progress_strength}>
-              <progress max="100" value={progress} className="strength" />
-              <small>{progress}% Complete</small>
-            </div>
-          </>
-        )}
+        <div data-aos="fade-up" data-aos-once="true" className={styles.type}>
+          <Typewriter
+            options={{
+              strings: ["Thank you for contacting Layobright"],
+              autoStart: true,
+              loop: true,
+              delay: 300,
+              pauseFor: 1112500,
+            }}
+          />
+        </div>
+      </div>
+
+      <div className={slide ? styles.onboard_slide : styles.onboard_slid}>
+        <div className={styles.slide_img}>
+          <img src={car} alt="" />
+        </div>
       </div>
     </div>
   );

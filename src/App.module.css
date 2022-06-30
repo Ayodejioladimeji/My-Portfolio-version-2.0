@@ -43,6 +43,7 @@
   --shadows: 0px 22px 24px rgba(65, 111, 244, 0.2);
   --shadoos: 0px 0px 7px rgba(65, 111, 65, 0.2);
   --transition: all 0.3s linear;
+  --transitions: all 10s linear;
 }
 
 body {
@@ -99,3 +100,16 @@ a {
   margin: 0 auto;
   max-width: 1170px;
 } */
+
+.error-page {
+  display: grid;
+  place-items: center;
+  /* background: white; */
+  text-align: center;
+}
+.error-page h1 {
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 40px;
+}

@@ -11,23 +11,27 @@ import Onboarding from "./components/onboarding/Onboarding";
 import Footer from "./components/footer/Footer";
 import NavTab from "./components/navtab/NavTab";
 import ChatwootWidget from "./common/ChatwootWidget";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
-  const [pageLoad, setPageLoad] = useState(false);
   const [loading, setLoading] = useState(true);
   const [state] = useContext(Context);
   const { nav } = state;
 
   useEffect(() => {
-    if (pageLoad) {
-      setTimeout(() => {
-        setLoading(false);
-      }, 12000);
-    }
-  }, [pageLoad]);
+    Aos.init({ duration: 1500 });
+    console.log("loaded");
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 24000);
+  }, []);
 
   if (loading) {
-    return <Onboarding pageLoad={pageLoad} setPageLoad={setPageLoad} />;
+    return <Onboarding />;
   }
 
   return (

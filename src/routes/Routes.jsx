@@ -9,6 +9,7 @@ import Home from "../pages/Home";
 import Projects from "./../pages/Projects";
 import About from "./../pages/About";
 import Blogs from "./../pages/Blogs";
+import Error from "./../pages/Error";
 
 const Routes = () => {
   const { pathname } = useLocation();
@@ -29,6 +30,8 @@ const Routes = () => {
       <Route path="/projects" exact component={Projects} />
       <Route path="/about" exact component={About} />
       <Route path="/blogs" exact component={Blogs} />
+
+      <Route component={Error} />
     </Switch>
   );
 };

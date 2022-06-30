@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import services from "../../constants/services";
 import styles from "./Services.module.css";
 import Title from "./../title/Title";

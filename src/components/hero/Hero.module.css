@@ -59,7 +59,7 @@
 }
 
 .hero_left_div .type {
-  font-size: var(--font-larger);
+  font-size: var(--font-large);
   color: var(--violet);
   margin-top: 10px;
   font-family: "Grand Hotel";

@@ -26,15 +26,21 @@ const Hero = () => {
       <div className={styles.hero}>
         <div className={styles.hero_left}>
           <div className={styles.hero_left_div}>
-            <h2 className={styles.slide}>I'm</h2>
-            <h1 data-text=" &nbsp;Layobright" className={styles.slide1}>
+            <h2 data-aos="fade-down" className={styles.slide}>
+              I'm
+            </h2>
+            <h1
+              data-aos="zoom-in"
+              data-text=" &nbsp;Layobright"
+              className={styles.slide1}
+            >
               Layobright<small>.</small>
               &nbsp;
             </h1>
 
             <div
               className={styles.type}
-              data-aos="zoom-in"
+              data-aos="fade-right"
               data-aos-once="true"
             >
               <Typewriter
@@ -49,7 +55,7 @@ const Hero = () => {
                 }}
               />
             </div>
-            <div className={styles.touch}>
+            <div data-aos="fade-up" className={styles.touch}>
               <Button text="GET INTOUCH" />
             </div>
 
@@ -75,7 +81,11 @@ const Hero = () => {
             <HeroImages />
           </div>
 
-          <div className={styles.hero_round}>
+          <div
+            data-aos="zoom-in"
+            // data-aos-once="true"
+            className={styles.hero_round}
+          >
             <img src={car} alt="" />
           </div>
 
