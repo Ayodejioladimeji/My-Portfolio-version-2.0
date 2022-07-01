@@ -14,11 +14,11 @@ const Home = () => {
     <>
       <SEO title="Homepage" />
       <Particle />
-      <Hero />
-      <Services />
-      <Jobas />
-      <Projects />
-      <Blogs />
+      {/* <Hero /> */}
+      {/* <Services /> */}
+      {/* <Jobas /> */}
+      {/* <Projects /> */}
+      {/* <Blogs /> */}
     </>
   );
 };

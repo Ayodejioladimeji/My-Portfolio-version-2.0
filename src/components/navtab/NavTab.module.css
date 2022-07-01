@@ -47,3 +47,16 @@
 .none {
   display: none;
 }
+
+/* THE RESPONSIVENESS */
+@media (max-width: 600px) {
+  .navtab_center {
+    width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  .navtab_center {
+    width: 95%;
+  }
+}

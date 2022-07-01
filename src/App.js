@@ -30,6 +30,17 @@ function App() {
     }, 24000);
   }, []);
 
+  // CHECKING FOR MEDIA QUERY
+  const [matches, setMatches] = useState(
+    window.matchMedia("(max-width: 900px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 600px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
+
   if (loading) {
     return <Onboarding />;
   }
@@ -40,8 +51,8 @@ function App() {
         <Navbar />
         <Routes />
         <ChatwootWidget />
-        {nav && <NavTab />}
-        <Footer />
+        {nav || (matches && <NavTab />)}
+        {/* <Footer /> */}
       </div>
     </Router>
   );
