@@ -1,4 +1,20 @@
 /* THE SECTION OF THE IMAGES DISPLAY */
+.atom_images {
+  position: absolute;
+  height: 420px;
+  width: 420px;
+  animation: hero-image-spin infinite 150s linear;
+}
+
+@keyframes hero-image-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .atom {
   opacity: 0;
   border-radius: 50%;
@@ -7,8 +23,8 @@
 
 .atom:nth-of-type(1) {
   position: absolute;
-  top: 40px;
-  right: 60px;
+  top: 30px;
+  right: 20px;
   height: 60px;
   width: 60px;
   object-fit: cover;
@@ -17,7 +33,7 @@
 .atom:nth-of-type(2) {
   position: absolute;
   top: 130px;
-  right: 0px;
+  right: -30px;
   height: 60px;
   width: 60px;
   object-fit: cover;
@@ -26,7 +42,7 @@
 .atom:nth-of-type(3) {
   position: absolute;
   top: 240px;
-  right: -20px;
+  right: -35px;
   height: 60px;
   width: 60px;
   object-fit: cover;
@@ -35,7 +51,7 @@
 .atom:nth-of-type(4) {
   position: absolute;
   top: 340px;
-  right: -0px;
+  right: 35px;
   height: 60px;
   width: 60px;
   object-fit: cover;
@@ -43,8 +59,8 @@
 }
 .atom:nth-of-type(5) {
   position: absolute;
-  top: 420px;
-  right: 60px;
+  top: 390px;
+  right: 130px;
   height: 60px;
   width: 60px;
   object-fit: cover;
@@ -52,8 +68,8 @@
 }
 .atom:nth-of-type(6) {
   position: absolute;
-  top: 470px;
-  right: 160px;
+  top: 380px;
+  right: 230px;
   height: 60px;
   width: 60px;
   object-fit: cover;
@@ -61,8 +77,8 @@
 }
 .atom:nth-of-type(7) {
   position: absolute;
-  top: 475px;
-  right: 270px;
+  top: 335px;
+  right: 330px;
   height: 60px;
   width: 60px;
   object-fit: cover;
@@ -76,20 +92,22 @@
   width: 60px;
   object-fit: cover;
   animation-delay: 7.5s;
+  display: none;
 }
 .atom:nth-of-type(9) {
   position: absolute;
   top: 350px;
-  left: 7px;
+  left: 0px;
   height: 60px;
   width: 60px;
   object-fit: cover;
   animation-delay: 8.5s;
+  display: none;
 }
 .atom:nth-of-type(10) {
   position: absolute;
-  top: 250px;
-  left: -20px;
+  top: 235px;
+  left: -25px;
   height: 60px;
   width: 60px;
   object-fit: cover;
@@ -97,8 +115,8 @@
 }
 .atom:nth-of-type(11) {
   position: absolute;
-  top: 150px;
-  left: -10px;
+  top: 120px;
+  left: -32px;
   height: 60px;
   width: 60px;
   object-fit: cover;
@@ -106,8 +124,8 @@
 }
 .atom:nth-of-type(12) {
   position: absolute;
-  top: 70px;
-  left: 35px;
+  top: 30px;
+  left: 25px;
   height: 60px;
   width: 60px;
   object-fit: cover;
@@ -115,8 +133,8 @@
 }
 .atom:nth-of-type(13) {
   position: absolute;
-  top: 10px;
-  left: 110px;
+  top: -30px;
+  left: 125px;
   height: 60px;
   width: 60px;
   object-fit: cover;
@@ -124,17 +142,18 @@
 }
 .atom:nth-of-type(14) {
   position: absolute;
-  top: -20px;
-  left: 200px;
+  top: -35px;
+  left: 190px;
   height: 60px;
   width: 60px;
   object-fit: cover;
   animation-delay: 13.5s;
+  display: none;
 }
 .atom:nth-of-type(15) {
   position: absolute;
-  top: -10px;
-  right: 150px;
+  top: -30px;
+  right: 120px;
   height: 60px;
   width: 60px;
   object-fit: cover;
@@ -149,5 +168,75 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+/* THE RESPONSIVENESS */
+@media (min-width: 1300px) {
+  /* THE SECTION OF THE IMAGES DISPLAY */
+
+  .atom:nth-of-type(1) {
+    top: -10px;
+    right: 10px;
+  }
+
+  .atom:nth-of-type(2) {
+    top: 70px;
+    right: -60px;
+  }
+  .atom:nth-of-type(3) {
+    top: 170px;
+    right: -85px;
+  }
+  .atom:nth-of-type(4) {
+    top: 280px;
+    right: -60px;
+  }
+  .atom:nth-of-type(5) {
+    top: 375px;
+    right: 10px;
+  }
+  .atom:nth-of-type(6) {
+    top: 425px;
+    right: 110px;
+  }
+  .atom:nth-of-type(7) {
+    top: 425px;
+    right: 220px;
+  }
+  .atom:nth-of-type(8) {
+    top: 390px;
+    right: 320px;
+    display: block;
+  }
+  .atom:nth-of-type(9) {
+    top: 300px;
+    left: -45px;
+    display: block;
+  }
+  .atom:nth-of-type(10) {
+    top: 200px;
+    left: -70px;
+  }
+  .atom:nth-of-type(11) {
+    top: 100px;
+    left: -70px;
+  }
+  .atom:nth-of-type(12) {
+    top: 15px;
+    left: -15px;
+  }
+  .atom:nth-of-type(13) {
+    top: -50px;
+    left: 70px;
+  }
+  .atom:nth-of-type(14) {
+    top: -75px;
+    left: 170px;
+    display: block;
+  }
+  .atom:nth-of-type(15) {
+    top: -60px;
+    right: 90px;
   }
 }

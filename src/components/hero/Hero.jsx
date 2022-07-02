@@ -26,11 +26,16 @@ const Hero = () => {
       <div className={styles.hero}>
         <div className={styles.hero_left}>
           <div className={styles.hero_left_div}>
-            <h2 data-aos="fade-down" className={styles.slide}>
+            <h2
+              data-aos="fade-down"
+              data-aos-once="true"
+              className={styles.slide}
+            >
               I'm
             </h2>
             <h1
               data-aos="zoom-in"
+              data-aos-once="true"
               data-text=" &nbsp;Layobright"
               className={styles.slide1}
             >
@@ -55,7 +60,11 @@ const Hero = () => {
                 }}
               />
             </div>
-            <div data-aos="fade-up" className={styles.touch}>
+            <div
+              data-aos="fade-up"
+              data-aos-once="true"
+              className={styles.touch}
+            >
               <Button text="GET INTOUCH" />
             </div>
 
@@ -79,14 +88,13 @@ const Hero = () => {
         <div className={styles.hero_right}>
           <div className={styles.hero_right_image}>
             <HeroImages />
-          </div>
-
-          <div
-            data-aos="zoom-in"
-            // data-aos-once="true"
-            className={styles.hero_round}
-          >
-            <img src={car} alt="" />
+            <div
+              data-aos="zoom-in"
+              data-aos-once="true"
+              className={styles.hero_round}
+            >
+              <img src={car} alt="" />
+            </div>
           </div>
 
           {!nav && <div className={styles.email}>Alayosingers@gmail.com</div>}

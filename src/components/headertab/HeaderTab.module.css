@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: flex-end;
   width: 400px;
+  background: transparent !important;
 }
 
 .nav_header button,

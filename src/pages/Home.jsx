@@ -14,8 +14,8 @@ const Home = () => {
     <>
       <SEO title="Homepage" />
       <Particle />
-      {/* <Hero /> */}
-      {/* <Services /> */}
+      <Hero />
+      <Services />
       {/* <Jobas /> */}
       {/* <Projects /> */}
       {/* <Blogs /> */}

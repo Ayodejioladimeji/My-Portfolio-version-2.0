@@ -19,7 +19,7 @@ import heroku from "../assets/heroku.png";
 
 const heroImages = () => {
   return (
-    <>
+    <div className={styles.atom_images}>
       <img src={atom} alt="atom" className={styles.atom} />
       <img src={bootstrap} alt="atom" className={styles.atom} />
       <img src={typescript} alt="atom" className={styles.atom} />
@@ -35,7 +35,7 @@ const heroImages = () => {
       <img src={jquery} alt="atom" className={styles.atom} />
       <img src={heroku} alt="atom" className={styles.atom} />
       <img src={git} alt="atom" className={styles.atom} />
-    </>
+    </div>
   );
 };
 
