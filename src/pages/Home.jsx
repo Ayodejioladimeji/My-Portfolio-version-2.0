@@ -16,9 +16,9 @@ const Home = () => {
       <Particle />
       <Hero />
       <Services />
-      {/* <Jobas /> */}
-      {/* <Projects /> */}
-      {/* <Blogs /> */}
+      <Jobas />
+      <Projects />
+      <Blogs />
     </>
   );
 };

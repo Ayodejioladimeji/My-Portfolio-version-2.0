@@ -65,3 +65,15 @@
 .scroll:hover {
   background: var(--primary);
 }
+
+@media (max-width: 420px) {
+  .footer h4 {
+    font-size: var(--font-medium);
+  }
+}
+
+@media (max-width: 376px) {
+  .footer h4 {
+    font-size: var(--font-smaller);
+  }
+}

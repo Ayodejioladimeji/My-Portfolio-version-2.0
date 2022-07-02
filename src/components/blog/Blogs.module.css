@@ -1,7 +1,5 @@
-
-
 .blog_section {
-  padding: 5rem 0;
+  padding: 5rem 10px;
   margin-top: 20px;
 }
 
@@ -11,8 +9,8 @@
   max-width: 1170px;
 }
 
-.blog_box{
-  margin-top:100px;
+.blog_box {
+  margin-top: 100px;
 }
 
 .blog {
@@ -69,8 +67,8 @@
   transition: var(--transition);
 }
 
-.blog_footer a p:hover{
-  color:var(--hover)!important;
+.blog_footer a p:hover {
+  color: var(--hover) !important;
 }
 
 .blog_footer p:hover {
@@ -99,6 +97,8 @@
   transition: var(--transition);
 }
 
+/* THE RESPONSIVENESS */
+
 @media screen and (min-width: 576px) {
   .blogs_center {
     display: grid;
@@ -109,8 +109,15 @@
     height: 17.5rem;
   }
 }
+
 @media screen and (min-width: 850px) {
   .blog_img {
     height: 13.75rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .blogs_center {
+    width: 100%;
   }
 }

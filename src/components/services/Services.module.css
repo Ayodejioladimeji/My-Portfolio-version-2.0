@@ -9,9 +9,8 @@
   width: 95vw;
   margin: 0 auto;
   max-width: 1170px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
   /* height: 400px; */
 }
 
@@ -26,6 +25,7 @@
   /* background: green; */
   height: 330px;
   line-height: 30px;
+  margin-bottom: 20px;
 }
 
 .service_icon {
@@ -105,5 +105,12 @@
 @media screen and (min-width: 992px) {
   .service_center {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 310px) {
+  .service_center {
+    width: 100%;
+    max-width: 100%;
   }
 }

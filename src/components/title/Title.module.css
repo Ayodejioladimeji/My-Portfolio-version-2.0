@@ -30,3 +30,21 @@
   width: 500px;
   margin-left: 20px;
 }
+
+/* THE RESPONSIVENESS */
+@media (max-width: 706px) {
+  .underline {
+    width: 50%;
+  }
+}
+
+@media (max-width: 360px) {
+  .underline {
+    width: 30%;
+  }
+}
+@media (max-width: 300px) {
+  .underline {
+    display: none;
+  }
+}

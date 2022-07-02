@@ -52,7 +52,6 @@
   padding: 1rem 2rem;
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
-  border-right: 5px solid var(--primary);
 }
 
 .project_info h3 {
@@ -83,15 +82,15 @@
   border: 1px outset var(--hover);
 }
 
-.project_desc button{
-  text-decoration:none;
-  transition:var(--transition)
+.project_desc button {
+  text-decoration: none;
+  transition: var(--transition);
 }
 
-.project_desc button:hover{
-  background:var(--primary);
-  color:var(--white);
-  transition:var(--transition)
+.project_desc button:hover {
+  background: var(--primary);
+  color: var(--white);
+  transition: var(--transition);
 }
 
 .project_stack {
@@ -130,25 +129,6 @@
   margin-top: 3rem;
   transition: var(--transition);
 }
-/* 
-.btn {
-  background: transparent;
-  border: 1px solid var(--hover);
-  padding: 10px 20px;
-  color: var(--primary);
-  outline: none;
-  cursor: pointer;
-  transition: var(--transition);
-  font-weight: bold;
-  border-radius: 10px;
-}
-
-.btn:hover {
-  background: violet;
-  transform: scale(1);
-  transition: var(--transition);
-  color: var(--white);
-} */
 
 /* ===========THE MEDIA QUERY============ */
 @media screen and (min-width: 576px) {
@@ -184,6 +164,7 @@
     z-index: 1;
     grid-column: 6 /15;
     grid-row: 1 / 1;
+    border-right: 5px solid var(--primary);
   }
 
   .project:nth-of-type(even) .project_img {
@@ -195,5 +176,11 @@
     grid-column: 2 / span 7;
     grid-row: 1 / 1;
     text-align: left;
+  }
+}
+
+@media (max-width: 425px) {
+  .project_info {
+    padding: 1rem;
   }
 }

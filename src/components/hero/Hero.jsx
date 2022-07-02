@@ -43,6 +43,14 @@ const Hero = () => {
               &nbsp;
             </h1>
 
+            <h1
+              data-aos="zoom-in"
+              data-aos-once="true"
+              className={styles.sliding}
+            >
+              Layobright
+            </h1>
+
             <div
               className={styles.type}
               data-aos="fade-right"

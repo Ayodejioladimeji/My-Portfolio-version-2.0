@@ -4,6 +4,7 @@
   align-items: center;
   height: 100vh;
   padding: 0 10px;
+  width: 100%;
 }
 
 /* THE HERO LEFT */
@@ -26,6 +27,10 @@
   font-weight: bold;
 }
 
+.sliding {
+  display: none;
+}
+
 .hero_left_div h1 {
   font-size: 3rem;
   font-family: "Alfa Slab One";
@@ -34,6 +39,7 @@
   -webkit-text-stroke: 1px var(--primary);
   color: transparent;
   text-transform: uppercase;
+  /* display: none; */
 }
 
 .hero_left_div h1::before {
@@ -239,6 +245,14 @@
 @media (max-width: 330px) {
   .hero_left_div h2 {
     font-size: var(--font-big);
+  }
+
+  .hero_left_div .slide1 {
+    display: none;
+  }
+
+  .sliding {
+    display: block;
   }
 
   .hero_left_div {
