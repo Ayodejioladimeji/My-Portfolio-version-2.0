@@ -13,13 +13,21 @@
 }
 
 .about_img {
+  margin: 0 auto;
+  display: block;
   margin-bottom: 2rem;
-  height: 25rem;
+  height: 30rem;
 }
 
 .about_text {
   margin-bottom: 2rem;
   text-align: left;
+}
+
+.about_icon {
+  margin-right: 10px;
+  margin-bottom: -2px;
+  color: var(--primary);
 }
 
 .about_text p {
@@ -30,6 +38,7 @@
 .about_stack {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .stacks {
@@ -53,7 +62,7 @@
 @media screen and (min-width: 992px) {
   .about_center {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(14, 1fr);
     align-items: center;
     column-gap: 4rem;
   }
@@ -65,5 +74,15 @@
 
   .about_text {
     grid-column: 7 / -1;
+  }
+
+  .about_stack {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about_img {
+    height: 20rem;
   }
 }

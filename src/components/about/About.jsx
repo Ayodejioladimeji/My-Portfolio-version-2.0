@@ -1,4 +1,5 @@
 import React from "react";
+import { FiCheckSquare } from "react-icons/fi";
 
 // COMPONENTS
 import stack from "../../constants/stack";
@@ -11,9 +12,12 @@ const About = ({ ...item }) => {
     <>
       <img src={image} alt="about-me" className={styles.about_img} />
       <article className={styles.about_text}>
-        <p data-aos="flip-right" data-aos-once="true">
-          {info}
-        </p>
+        {info.map((item) => (
+          <p key={item.id} data-aos="flip-right" data-aos-once="true">
+            <FiCheckSquare className={styles.about_icon} />
+            {item}
+          </p>
+        ))}
         <div className={styles.about_stack}>
           {stack.map((data) => {
             const { id, stack } = data;

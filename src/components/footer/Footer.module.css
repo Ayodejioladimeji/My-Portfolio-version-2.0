@@ -66,6 +66,13 @@
   background: var(--primary);
 }
 
+@media (max-width: 650px) {
+  .scroll {
+    left: 10px;
+    bottom: 10px;
+  }
+}
+
 @media (max-width: 420px) {
   .footer h4 {
     font-size: var(--font-medium);

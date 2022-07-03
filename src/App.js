@@ -51,7 +51,7 @@ function App() {
         <Navbar />
         <Routes />
         <ChatwootWidget />
-        {nav || (matches && <NavTab />)}
+        {nav && <NavTab />}
         <Footer />
       </div>
     </Router>

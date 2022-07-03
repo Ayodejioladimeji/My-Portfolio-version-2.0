@@ -36,6 +36,10 @@ const stack = [
     stack: "NODE JS",
   },
   {
+    id: "13",
+    stack: "EXPRESS_JS",
+  },
+  {
     id: "6",
     stack: "BOOTSTRAP",
   },
@@ -55,7 +59,23 @@ const stack = [
     id: "10",
     stack: "SQL",
   },
- 
+
+  {
+    id: "14",
+    stack: "MONGO_DB",
+  },
+  {
+    id: "15",
+    stack: "AWS",
+  },
+  {
+    id: "16",
+    stack: "HEROKU",
+  },
+  {
+    id: "17",
+    stack: "DIGITAL OCEAN",
+  },
 ];
 
 export default stack;

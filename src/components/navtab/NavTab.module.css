@@ -49,6 +49,12 @@
 }
 
 /* THE RESPONSIVENESS */
+@media (max-width: 650px) {
+  .navtab {
+    bottom: 12%;
+  }
+}
+
 @media (max-width: 600px) {
   .navtab_center {
     width: 70%;
