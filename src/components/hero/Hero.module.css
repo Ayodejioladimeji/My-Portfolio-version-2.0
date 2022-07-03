@@ -113,6 +113,7 @@
   height: 300px;
   width: 300px;
   border-radius: 50%;
+  border: 5px outset var(--hover);
 }
 
 .hero_round img {

@@ -1,3 +1,5 @@
+import image22 from "../assets/images/image1.jpg";
+
 const about = [
   {
     id: "1",
@@ -11,8 +13,7 @@ const about = [
       "I care deeply about the code I write and the effect my work has on the client’s product.",
       " I enjoy interactions with clients and seeing the joy they get when I deliver the applications they’ve been wanting.",
     ],
-    image:
-      "https://res.cloudinary.com/devsource/image/upload/v1606736365/WhatsApp_Image_2020-11-27_at_4.41.40_AM_arvvck.jpg",
+    image: image22,
   },
 ];
 

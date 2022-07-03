@@ -12,7 +12,7 @@ const ProjectsPage = () => {
   const [projects] = useState(data);
 
   return (
-    <section style={{ marginTop: "50px" }} className={styles.projects}>
+    <section style={{ paddingTop: "200px" }} className={styles.projects}>
       <SEO title="My Projects" />
       <Particle />
       <Title title="All Projects" />

@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 // COMPONENTS
 import styles from "./Onboarding.module.css";
 import Particles from "../particles/Particles";
-import car from "../../assets/car.png";
+import image3 from "../../assets/images/image3.jpg";
 // import car from "../../assets/car.png";
 
 const Onboarding = () => {
@@ -64,7 +64,7 @@ const Onboarding = () => {
 
       <div className={slide ? styles.onboard_slide : styles.onboard_slid}>
         <div className={styles.slide_img}>
-          <img src={car} alt="" />
+          <img src={image3} alt="" />
         </div>
       </div>
     </div>

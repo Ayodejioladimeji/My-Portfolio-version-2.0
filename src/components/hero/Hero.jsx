@@ -10,7 +10,8 @@ import Button from "../button/Button";
 import HeroImages from "./../../constants/heroImages";
 // import Particle from "../particles/Particles";
 import { Context } from "./../../store/Context";
-import car from "../../assets/car.png";
+// import image2 from "../../assets/images/image2.jpg";
+import image2 from "../../assets/images/image11.png";
 
 const Hero = () => {
   const [state] = useContext(Context);
@@ -101,7 +102,7 @@ const Hero = () => {
               data-aos-once="true"
               className={styles.hero_round}
             >
-              <img src={car} alt="" />
+              <img src={image2} alt="" />
             </div>
           </div>
 
