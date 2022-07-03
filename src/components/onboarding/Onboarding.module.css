@@ -150,7 +150,7 @@ progress {
   border-radius: 45%;
   height: 170%;
   width: 200%;
-  animation: spin 25s ease-in-out infinite;
+  animation: spin 30s ease-in-out infinite;
 }
 
 @keyframes spin {
@@ -165,7 +165,7 @@ progress {
     transform: translateY(-60%) rotate(600deg);
   } */
   80% {
-    transform: translateY(-100%) rotate(1900deg);
+    transform: translateY(-100%) rotate(1700deg);
   }
   100% {
     transform: translateY(-200%) rotate(1700deg);

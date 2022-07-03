@@ -7,12 +7,13 @@ import Typewriter from "typewriter-effect";
 import styles from "./Onboarding.module.css";
 import Particles from "../particles/Particles";
 import image3 from "../../assets/images/image3.jpg";
-// import car from "../../assets/car.png";
 
 const Onboarding = () => {
   const [progress, setProgress] = useState(0);
   const [slide, setSlide] = useState(false);
   const id = useRef(null);
+
+  console.log(slide);
 
   const clear = () => {
     window.clearInterval(id.current);

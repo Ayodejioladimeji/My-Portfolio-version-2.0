@@ -21,7 +21,6 @@ function App() {
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
-    console.log("loaded");
   }, []);
 
   useEffect(() => {
