@@ -44,7 +44,7 @@
 
 .scroll {
   color: var(--white);
-  position: fixed;
+  position: absolute;
   left: 80px;
   bottom: 40px;
   padding: 10px;
@@ -69,7 +69,7 @@
 @media (max-width: 650px) {
   .scroll {
     left: 10px;
-    bottom: 10px;
+    bottom: 20px;
   }
 }
 

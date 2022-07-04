@@ -171,3 +171,9 @@ progress {
     transform: translateY(-200%) rotate(1700deg);
   }
 }
+
+@media (max-width: 500px) {
+  .type {
+    font-size: var(--font-mid);
+  }
+}

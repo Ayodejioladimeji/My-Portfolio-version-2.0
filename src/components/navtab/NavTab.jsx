@@ -7,20 +7,18 @@ import {
   FaProjectDiagram,
   FaRegUser,
 } from "react-icons/fa";
-import { BsStar } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 // COMPONENTS
 import styles from "./NavTab.module.css";
 import { Context } from "./../../store/Context";
-import Modal from "../modal/Modal";
 
 const NavTab = () => {
-  const [state, dispatch] = useContext(Context);
-  const { scroll, modal } = state;
+  const [state] = useContext(Context);
+  const { menu } = state;
 
   return (
-    <div className={scroll === 100 ? styles.none : styles.navtab}>
+    <div className={menu ? styles.navtab : styles.navtabs}>
       <div className={styles.navtab_center}>
         <Link to="/">
           <div className={styles.tab_div}>

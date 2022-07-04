@@ -12,6 +12,7 @@ import HeroImages from "./../../constants/heroImages";
 import { Context } from "./../../store/Context";
 // import image2 from "../../assets/images/image2.jpg";
 import image2 from "../../assets/images/image11.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [state] = useContext(Context);
@@ -69,13 +70,15 @@ const Hero = () => {
                 }}
               />
             </div>
-            <div
-              data-aos="fade-up"
-              data-aos-once="true"
-              className={styles.touch}
-            >
-              <Button text="GET INTOUCH" />
-            </div>
+            <Link to="/projects">
+              <div
+                data-aos="fade-up"
+                data-aos-once="true"
+                className={styles.touch}
+              >
+                <Button text="Explore Today" />
+              </div>
+            </Link>
 
             {!nav && (
               <div className={styles.social_link}>

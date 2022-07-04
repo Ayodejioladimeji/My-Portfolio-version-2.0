@@ -17,7 +17,7 @@ import "aos/dist/aos.css";
 function App() {
   const [loading, setLoading] = useState(true);
   const [state] = useContext(Context);
-  const { nav } = state;
+  const { menu } = state;
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
@@ -39,7 +39,7 @@ function App() {
         <Navbar />
         <Routes />
         <ChatwootWidget />
-        {nav && <NavTab />}
+        {menu && <NavTab />}
         <Footer />
       </div>
     </Router>

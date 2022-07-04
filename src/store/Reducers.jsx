@@ -33,6 +33,11 @@ const Reducer = (state, action) => {
         ...state,
         data: { ...state, payload },
       };
+    case ACTIONS.MENU_OPEN:
+      return {
+        ...state,
+        menu: payload,
+      };
 
     default:
       return state;

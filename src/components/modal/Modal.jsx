@@ -17,10 +17,10 @@ const initialState = {
 };
 
 const Modal = () => {
-  const [state, dispatch] = useContext(Context);
+  const [dispatch] = useContext(Context);
   const [rate, setRate] = useState(initialState);
   const clickRef = useRef();
-  const { rating, comment, fullname, err } = rate;
+  const { rating, comment, fullname } = rate;
 
   // the handleChange function
   const handleChange = (e) => {

@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { RiMenuFoldLine } from "react-icons/ri";
 // import { useTranslation } from "react-i18next";
 
 // COMPONENTS
 import styles from "./HeaderTab.module.css";
-import gmail from "../../assets/gmail.png";
-// import { Context } from "./../../store/Context";
+import { Context } from "./../../store/Context";
 
 const HeaderTab = () => {
-  // const [state, dispatch] = useContext(Context);
+  const [state, dispatch] = useContext(Context);
+  const { menu } = state;
   // const { language_open_modal } = state;
 
   // const { t } = useTranslation();
@@ -50,14 +51,11 @@ const HeaderTab = () => {
         </option>
       </select> */}
 
-      <div className={styles.heading}>
-        <a
-          href="mailto:alayosingers@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={gmail} alt="" />
-        </a>
+      <div
+        className={styles.heading}
+        onClick={() => dispatch({ type: "MENU_OPEN", payload: !menu })}
+      >
+        <RiMenuFoldLine className={styles.tab_menu} />
       </div>
     </div>
   );

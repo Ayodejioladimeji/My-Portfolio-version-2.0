@@ -9,6 +9,7 @@ const initialState = {
   modal: false,
   language_open_modal: false,
   data: {},
+  menu: false,
 };
 
 export const ContextProvider = ({ children }) => {

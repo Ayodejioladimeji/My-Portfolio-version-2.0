@@ -28,3 +28,8 @@
   height: 100%;
   object-fit: cover;
 }
+
+.tab_menu {
+  font-size: var(--font-large);
+  margin-right: 10px;
+}

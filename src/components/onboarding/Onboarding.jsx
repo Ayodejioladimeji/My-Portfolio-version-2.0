@@ -13,8 +13,6 @@ const Onboarding = () => {
   const [slide, setSlide] = useState(false);
   const id = useRef(null);
 
-  console.log(slide);
-
   const clear = () => {
     window.clearInterval(id.current);
   };
