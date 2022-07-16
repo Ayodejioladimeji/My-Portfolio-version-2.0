@@ -42,7 +42,7 @@ const Onboarding = () => {
           className={styles.box}
         ></div>
         <div className={styles.progress_strength}>
-          {/* <progress max="100" value={progress} className="strength" /> */}
+          <progress max="100" value={progress} className="strength" />
           <small data-aos="fade-in" data-aos-once="true">
             {progress}% Complete
           </small>
@@ -61,11 +61,11 @@ const Onboarding = () => {
         </div>
       </div>
 
-      <div className={slide ? styles.onboard_slide : styles.onboard_slid}>
+      {/* <div className={slide ? styles.onboard_slide : styles.onboard_slid}>
         <div className={styles.slide_img}>
           <img src={image3} alt="" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
