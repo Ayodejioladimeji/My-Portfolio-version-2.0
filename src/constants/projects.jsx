@@ -1,14 +1,39 @@
 const projects = [
   {
+    id: "23",
+    order: 23,
+    title: "Hapartment Mobile App",
+    stack: "REACT NATIVE ",
+    description:
+      "We help users search for apartment easily and provide them with adequate information to help them make well-informed decisions.",
+    github: "https://github.com/Ayodejioladimeji",
+    url: "https://hapartment.org",
+    image:
+      "https://res.cloudinary.com/devsource/image/upload/v1672671077/hapartment/WhatsApp_Image_2023-01-02_at_3.49.21_PM_fb5gp8.jpg",
+    featured: true,
+  },
+  {
+    id: "22",
+    order: 22,
+    title: "Hapartment",
+    stack: "REACTJS ",
+    description:
+      "We help users search for apartment easily and provide them with adequate information to help them make well-informed decisions.",
+    github: "https://github.com/Ayodejioladimeji",
+    url: "https://hapartment.org",
+    image:
+      "https://res.cloudinary.com/hapartment/image/upload/v1672670264/Hapartment/hapartment_n8j3s5.png",
+    featured: true,
+  },
+  {
     id: "21",
     order: 21,
     title: "WealthHat",
     stack:
       "REACT, CSS-MODULES, CHATWOOT,NODEJS, EXPRESS, HEROKU, DIGITAL OCEAN ",
-    description:
-      "Application still under development => An investment advisor that’s focused on you",
+    description: "An investment advisor that’s focused on you",
     github: "https://github.com/Ayodejioladimeji",
-    url: "https://wealth-hat.herokuapp.com",
+    url: "https://wealthhat.com",
     image:
       "https://res.cloudinary.com/devsource/image/upload/v1656528835/portfolio/wealth_mw1qcj.png",
     featured: true,
@@ -112,7 +137,7 @@ const projects = [
     description:
       "Mamazee is an ecommerce website where you can buy unisex clothing online. Mamazee provides Faster buying process store and product listing creation, cost reduction, Affordable advertising and marketing, Flexibility for customers, No reach limitations, Product and price comparison, Faster response to buyer/market demands.",
     github: "https://github.com/Ayodejioladimeji",
-    url: "https://mamazee.herokuapp.com",
+    url: "https://mamazee.netlify.app",
     image:
       "https://res.cloudinary.com/devsource/image/upload/v1614948495/portfolio/admn_ubw1pr.png",
     featured: true,
