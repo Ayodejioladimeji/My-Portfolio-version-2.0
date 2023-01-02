@@ -5,9 +5,9 @@ const projects = [
     title: "Hapartment Mobile App",
     stack: "REACT NATIVE ",
     description:
-      "We help users search for apartment easily and provide them with adequate information to help them make well-informed decisions.",
+      "App still under development -- Hapartment is bringing agents with renters together by providing them with the simplest and most cost-effective route to renting properties online",
     github: "https://github.com/Ayodejioladimeji",
-    url: "https://hapartment.org",
+    url: "https://expo.dev/accounts/layobright/projects/hapartment/builds/5d77b712-d3fd-48df-b667-c35901d56bac",
     image:
       "https://res.cloudinary.com/devsource/image/upload/v1672671077/hapartment/WhatsApp_Image_2023-01-02_at_3.49.21_PM_fb5gp8.jpg",
     featured: true,
@@ -42,7 +42,7 @@ const projects = [
     id: "20",
     order: 20,
     title: "lakesi Global Travel",
-    stack: "REACT, CSS, CHATWOOT ",
+    stack: "REACT, CSS, CHATWOOT, SEO ",
     description:
       "To make travel and vacation plans simple, affordable, and enjoyable by providing our customers with world-class professionally managed skills in travel and tourism.",
     github: "https://github.com/Ayodejioladimeji",
@@ -102,7 +102,6 @@ const projects = [
     url: "https://voting2023.netlify.app",
     image:
       "https://res.cloudinary.com/devsource/image/upload/v1626899897/portfolio/Capturet_cxxlwk.png",
-    featured: true,
   },
   {
     id: "15",
