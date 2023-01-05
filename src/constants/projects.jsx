@@ -1,9 +1,9 @@
 const projects = [
   {
-    id: "23",
-    order: 23,
+    id: "24",
+    order: 24,
     title: "Hapartment Mobile App",
-    stack: "REACT NATIVE ",
+    stack: "REACT NATIVE, REDUX ",
     description:
       "App still under development -- Hapartment is bringing agents with renters together by providing them with the simplest and most cost-effective route to renting properties online",
     github: "https://github.com/Ayodejioladimeji",
@@ -13,10 +13,23 @@ const projects = [
     featured: true,
   },
   {
+    id: "23",
+    order: 23,
+    title: "Hapartment API Documentation",
+    stack: "SWAGGER",
+    description:
+      "Documentation still in progress -- Hapartment is bringing agents with renters together by providing them with the simplest and most cost-effective route to renting properties online",
+    github: "https://github.com/Ayodejioladimeji",
+    url: "https://api.hapartment.org",
+    image:
+      "https://res.cloudinary.com/devsource/image/upload/v1672945253/hapartment/hap_swagger_hvfk6z.png",
+    featured: true,
+  },
+  {
     id: "22",
     order: 22,
     title: "Hapartment",
-    stack: "REACTJS ",
+    stack: "REACTJS, REDUX ",
     description:
       "We help users search for apartment easily and provide them with adequate information to help them make well-informed decisions.",
     github: "https://github.com/Ayodejioladimeji",
@@ -30,7 +43,7 @@ const projects = [
     order: 21,
     title: "WealthHat",
     stack:
-      "REACT, CSS-MODULES, CHATWOOT,NODEJS, EXPRESS, HEROKU, DIGITAL OCEAN ",
+      "REACT,CONTEXT-API, CSS-MODULES, CHATWOOT,NODEJS, EXPRESS, HEROKU, DIGITAL OCEAN ",
     description: "An investment advisor that’s focused on you",
     github: "https://github.com/Ayodejioladimeji",
     url: "https://wealthhat.com",
@@ -42,7 +55,7 @@ const projects = [
     id: "20",
     order: 20,
     title: "lakesi Global Travel",
-    stack: "REACT, CSS, CHATWOOT, SEO ",
+    stack: "REACT, CONTEXT-API, CSS, CHATWOOT, SEO ",
     description:
       "To make travel and vacation plans simple, affordable, and enjoyable by providing our customers with world-class professionally managed skills in travel and tourism.",
     github: "https://github.com/Ayodejioladimeji",
@@ -56,11 +69,11 @@ const projects = [
     order: 19,
     title: "Connects Chat App",
     stack:
-      "REACT, CSS, SOCKET.IO, NODE, HEROKU, EXPRESS.JS, STYLED COMPONENTS ",
+      "REACT, REDUX, CSS, SOCKET.IO, NODE, HEROKU, PWA, EXPRESS.JS, STYLED COMPONENTS ",
     description:
       "Connect Chat App is a social messenger for connecting people together without stress",
     github: "https://github.com/Ayodejioladimeji",
-    url: "https://connects-chat-app.herokuapp.com",
+    url: "https://connects-chat.netlify.app",
     image:
       "https://res.cloudinary.com/devsource/image/upload/v1656504175/portfolio/project-two_dlwqol.png",
     featured: true,
@@ -69,11 +82,12 @@ const projects = [
     id: "18",
     order: 18,
     title: "Teachify",
-    stack: "REACT, CSS, FRAMER-MOTION, NODE, HEROKU, EXPRESS.JS, BOOTSTRAP ",
+    stack:
+      "REACT,CONTEXT-API, CSS, FRAMER-MOTION, NODE, PWA, EXPRESS.JS, BOOTSTRAP ",
     description:
       "Teachify is a platform where students will learn a particular available course at a time and after completing the course, student will be eligible for online assessment and after completing the exam, a completion certificate will be automatically...",
     github: "https://github.com/Ayodejioladimeji",
-    url: "https://glitters-teachify.herokuapp.com",
+    url: "https://teachify-learning.netlify.app",
     image:
       "https://res.cloudinary.com/devsource/image/upload/v1656504181/portfolio/project-one_jvk8lz.png",
     featured: true,
@@ -86,10 +100,9 @@ const projects = [
     description:
       "A platform that allows students to make complains, ask for advices, seek solutions, guildance and stay updated with school informations, it is also a platform that allows interactions between student of all levels or departments.",
     github: "https://github.com/Ayodejioladimeji",
-    url: "https://mr-adeyinka.herokuapp.com",
+    url: "https://github.com/Ayodejioladimeji",
     image:
       "https://res.cloudinary.com/devsource/image/upload/v1632728745/portfolio/newly_aphvcc.png",
-    featured: true,
   },
   {
     id: "16",
@@ -99,7 +112,7 @@ const projects = [
     description:
       "Voting2023 is an online voting application to securely store casted votes while preventing any form of tampering and multifactor authentication to verify eligibility while granting voters to easily securely cast their votes using various mobile devices from any location while also increasing votes trust towards the voting process and offer better transparency during voting process.",
     github: "https://github.com/Ayodejioladimeji",
-    url: "https://voting2023.netlify.app",
+    url: "https://github.com/Ayodejioladimeji",
     image:
       "https://res.cloudinary.com/devsource/image/upload/v1626899897/portfolio/Capturet_cxxlwk.png",
   },
@@ -132,7 +145,7 @@ const projects = [
     id: "13",
     order: 13,
     title: "MAMAZEE CLOTHING",
-    stack: "REACT, CSS, NODE-JS, BOOTSTRAP, HEROKU-APP",
+    stack: "REACT,CONTEXT-API, CSS, NODE-JS, BOOTSTRAP, HEROKU-APP",
     description:
       "Mamazee is an ecommerce website where you can buy unisex clothing online. Mamazee provides Faster buying process store and product listing creation, cost reduction, Affordable advertising and marketing, Flexibility for customers, No reach limitations, Product and price comparison, Faster response to buyer/market demands.",
     github: "https://github.com/Ayodejioladimeji",
