@@ -23,15 +23,15 @@ function App() {
     Aos.init({ duration: 1500 });
   }, []);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 20000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 20000);
+  // }, []);
 
-  if (loading) {
-    return <Onboarding />;
-  }
+  // if (loading) {
+  //   return <Onboarding />;
+  // }
 
   return (
     <Router>

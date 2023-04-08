@@ -1,5 +1,38 @@
 const jobs = [
   {
+    id: "8",
+    order: 8,
+    title: "Frontend Developer",
+    dates: "JAN 2023 - TILL DATE",
+    duties: [
+      "Write clean and efficient code that is maintainable and scalable.",
+      "Collaborated with the UX team to create user-friendly interfaces for the website",
+      "Work with Frontend Frameworks to build complex web applications",
+      "Integrated the web application with third-party APIs such as Google Maps and Stripe.",
+      "Optimize web pages for performance and accessibility",
+      "Participated in daily stand-up meetings and sprint planning sessions.",
+      "Collaborated with the backend team to ensure seamless integration between the Frontend and Backend.",
+    ],
+    company: "TheFoundersLab",
+  },
+  {
+    id: "7",
+    order: 7,
+    title: "Frontend Developer",
+    dates: "AUG 2022 - DEC 2022",
+    duties: [
+      "Use markup languages like HTML to create user-friendly web pages",
+      "Write functional requirement documents and guides",
+      "Ensure high quality graphic standards and brand consistency",
+      "Optimizing web pages for maximum speed and scalability.",
+      "Striking a balance between functional and aesthetic design.",
+      "Implement visual elements that users see and interact with in a web application.",
+      "Developing features to enhance the user experience.",
+      "Maintaining brand consistency throughout the design.",
+    ],
+    company: "FreeLancing",
+  },
+  {
     id: "6",
     order: 6,
     title: "Project Lead Developer",
