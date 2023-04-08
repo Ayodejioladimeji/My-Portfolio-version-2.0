@@ -31,23 +31,26 @@ const Hero = () => {
             <h2
               data-aos="fade-down"
               data-aos-once="true"
+              data-aos-delay="400"
               className={styles.slide}
             >
               I'm
             </h2>
             <h1
-              data-aos="zoom-in"
-              data-aos-once="true"
               data-text=" &nbsp;Layobright"
               className={styles.slide1}
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="800"
             >
               Layobright<small>.</small>
               &nbsp;
             </h1>
 
             <h1
-              data-aos="zoom-in"
+              data-aos="fade-up"
               data-aos-once="true"
+              data-aos-delay="1200"
               className={styles.sliding}
             >
               Layobright
@@ -55,8 +58,9 @@ const Hero = () => {
 
             <div
               className={styles.type}
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-once="true"
+              data-aos-delay="1600"
             >
               <Typewriter
                 options={{
@@ -74,6 +78,7 @@ const Hero = () => {
               <div
                 data-aos="fade-up"
                 data-aos-once="true"
+                data-aos-delay="2000"
                 className={styles.touch}
               >
                 <Button text="Explore Today" />
@@ -103,6 +108,7 @@ const Hero = () => {
             <div
               data-aos="zoom-in"
               data-aos-once="true"
+              data-aos-delay="500"
               className={styles.hero_round}
             >
               <img src={image2} alt="" />

@@ -20,18 +20,18 @@ function App() {
   const { menu } = state;
 
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 1100 });
   }, []);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 20000);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 20000);
+  }, []);
 
-  // if (loading) {
-  //   return <Onboarding />;
-  // }
+  if (loading) {
+    return <Onboarding />;
+  }
 
   return (
     <Router>
