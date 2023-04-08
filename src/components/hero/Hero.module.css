@@ -46,7 +46,7 @@
   content: attr(data-text);
   position: absolute;
   color: var(--hover);
-  width: 0;
+  width: 33%;
   overflow: hidden;
   top: 12px;
   left: -23px;
