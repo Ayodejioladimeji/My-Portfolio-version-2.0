@@ -1,0 +1,50 @@
+.section_title {
+  color: var(--white);
+  width: 95vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.section_title h2 {
+  font-size: var(--font-mid);
+  font-family: "Grand Hotel";
+  letter-spacing: 5px;
+}
+
+.section_title h2 span {
+  height: 40px;
+  width: 40px;
+  /* border-radius: 50%; */
+  border: 2px solid var(--violet);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.underline {
+  height: 0.5px;
+  background: var(--primary);
+  width: 500px;
+  margin-left: 20px;
+}
+
+/* THE RESPONSIVENESS */
+@media (max-width: 706px) {
+  .underline {
+    width: 50%;
+  }
+}
+
+@media (max-width: 360px) {
+  .underline {
+    width: 30%;
+  }
+}
+@media (max-width: 300px) {
+  .underline {
+    display: none;
+  }
+}

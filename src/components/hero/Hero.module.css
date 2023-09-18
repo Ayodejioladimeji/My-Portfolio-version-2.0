@@ -1,9 +1,10 @@
 .hero {
-  /* padding-top: 100px; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 100vh;
+  /* padding: 0 10px; */
+  width: 100%;
 }
 
 /* THE HERO LEFT */
@@ -14,33 +15,58 @@
   justify-content: center;
   background: var(--hero);
   padding: 20px 0;
-  /* border-top: 3px dashed var(--hover); */
 }
 
 .hero_left_div {
   line-height: 55px;
+  width: 90%;
 }
 
 .hero_left_div h2 {
-  font-size: var(--font-largest);
+  font-size: var(--font-larger);
   font-weight: bold;
 }
 
+.sliding {
+  display: none;
+}
+
 .hero_left_div h1 {
-  font-size: 3.5rem;
-  /* font-weight: bold; */
+  font-size: 3rem;
   font-family: "Alfa Slab One";
-  text-shadow: 1px 1px var(--hover);
   letter-spacing: 8px;
+  position: relative;
+  -webkit-text-stroke: 1px var(--primary);
+  color: transparent;
+  text-transform: uppercase;
+  /* display: none; */
+}
+
+.hero_left_div h1::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--hover);
+  width: 33%;
+  overflow: hidden;
+  top: 12px;
+  left: -23px;
+  transition: 1s;
+  /* border-right: 8px solid var(--hover); */
+  -webkit-text-stroke: 1px maroon;
+}
+
+.hero_left_div h1:hover::before {
+  width: 100%;
+  filter: drop-shadow(0 0 25px blue);
 }
 
 .hero_left_div h1 small {
   color: var(--hover);
-  font-size: 5.5rem;
+  font-size: 4rem;
 }
 
 .hero_left_div .type {
-  font-size: var(--font-larger);
+  font-size: var(--font-big);
   color: var(--violet);
   margin-top: 10px;
   font-family: "Grand Hotel";
@@ -50,70 +76,12 @@
   position: fixed;
   left: 20px;
   bottom: 37px;
+  display: none;
 }
 
 .social_icon {
   color: var(--primary);
   font-size: var(--font-mid);
-}
-
-.slide {
-  animation: slideRight 6.5s ease-in-out 0.3s forwards;
-}
-.touch {
-  animation: slideRight 6.5s ease-in-out 0.3s forwards;
-}
-.slide1 {
-  animation: slideDown 6.5s ease-in-out 0.3s forwards;
-}
-.type {
-  animation: slideUp 6.5s ease-in-out 0.3s forwards;
-}
-
-.slide:nth-of-type(1) {
-  animation-delay: 1s;
-}
-slide1:nth-of-type(2) {
-  animation-delay: 1.5s;
-}
-.type {
-  animation-delay: 2s;
-}
-.touch:nth-of-type(4) {
-  animation-delay: 1s;
-}
-
-@keyframes slideRight {
-  0% {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideDown {
-  0% {
-    transform: translateY(-200px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(200px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 /* ========================================== */
@@ -125,57 +93,170 @@ slide1:nth-of-type(2) {
   justify-content: center;
   background: var(--hero);
   height: 100vh;
-  border-bottom: 3px solid var(--hover);
+  /* border-bottom: 3px solid var(--hover); */
   overflow: hidden;
+  position: relative;
 }
 
 .hero_right_image {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   margin-top: 60px;
   border-radius: 50%;
   position: relative;
-  /* border: 3px solid var(--primary); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero_right_image {
-  animation: hero-image-spin infinite 150s linear;
+.hero_round {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 5px outset var(--hover);
 }
 
-@keyframes hero-image-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* .hero_right_image img {
+.hero_round img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
   object-fit: cover;
-} */
+}
 
 /* THE SECTION OF THE EMAIL */
 
 .email {
   position: fixed;
   right: -40px;
-  bottom: 130px;
+  bottom: 150px;
   letter-spacing: 5px;
   /* background: var(--primary); */
   padding: 10px 20px;
   font-size: var(--font-smalling);
   -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
   transform: rotate(90deg) translate(-3rem, -5rem);
+  display: none;
 }
 
-/* .email::before {
-  content: "";
-  position: absolute;
-  top: -15px;
-  border: 35px solid transparent;
-  right: -60px;
-  border-left-color: var(--primary);
-} */
+/* =================================== */
+/* THE RESPONSIVENESS */
+@media (min-width: 1300px) {
+  .hero_left_div {
+    width: 80%;
+  }
+
+  .hero_left_div h2 {
+    font-size: var(--font-largest);
+  }
+
+  .hero_left_div h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero_left_div h1::before {
+    top: 10px;
+  }
+
+  .hero_left_div h1:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px blue);
+  }
+
+  .hero_left_div h1 small {
+    font-size: 5.5rem;
+  }
+
+  .hero_left_div .type {
+    font-size: var(--font-large);
+  }
+
+  .social_link ul {
+    display: block;
+  }
+
+  /* ========================================== */
+  /* THE HERO RIGHT */
+  .hero_right_image {
+    height: 500px;
+    width: 500px;
+  }
+
+  /* THE SECTION OF THE EMAIL */
+
+  .email {
+    display: block;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    flex-direction: column-reverse;
+    height: 100%;
+    text-align: center;
+  }
+
+  .hero_left {
+    width: 100% !important;
+  }
+
+  .hero_left_div h1::before {
+    display: none;
+  }
+  .hero_left_div h1 small {
+    display: none;
+  }
+
+  .hero_right {
+    width: 100%;
+    height: 78vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    text-align: left;
+  }
+  .hero_left {
+    height: 100vh;
+  }
+
+  .hero_left_div h2 {
+    font-size: var(--font-large);
+  }
+
+  .hero_left_div h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero_left_div h1:hover::before {
+    display: none;
+  }
+
+  .hero_right {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero_left_div h1 {
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 330px) {
+  .hero_left_div h2 {
+    font-size: var(--font-big);
+  }
+
+  .hero_left_div .slide1 {
+    display: none;
+  }
+
+  .sliding {
+    display: block;
+  }
+
+  .hero_left_div {
+    width: 100%;
+  }
+}

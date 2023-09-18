@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 // COMPONENTS
 import { links } from "../../constants/links";
 import styles from "./NavLinks.module.css";
+import gmail from "../../assets/gmail.png";
 
 const NavLinks = () => {
   return (
@@ -20,6 +21,15 @@ const NavLinks = () => {
           </li>
         );
       })}
+      <div className={styles.heading}>
+        <a
+          href="mailto:alayosingers@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={gmail} alt="" />
+        </a>
+      </div>
     </ul>
   );
 };
