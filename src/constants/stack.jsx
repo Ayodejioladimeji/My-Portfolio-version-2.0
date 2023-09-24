@@ -9,11 +9,11 @@ const stack = [
   },
   {
     id: "3",
-    stack: "REACT",
+    stack: "REACT TS",
   },
   {
     id: "13",
-    stack: "NEXT",
+    stack: "NEXT TS",
   },
   {
     id: "14",
@@ -75,6 +75,14 @@ const stack = [
   {
     id: "17",
     stack: "DIGITAL OCEAN",
+  },
+  {
+    id: "17",
+    stack: "SASS",
+  },
+  {
+    id: "17",
+    stack: "SOCKET",
   },
 ];
 

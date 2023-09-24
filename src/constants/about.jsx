@@ -1,11 +1,11 @@
-import image22 from "../assets/images/image1.jpg";
+import image22 from "../assets/images/kawa.jpeg";
 
 const about = [
   {
     id: "1",
     title: "About Me",
     info: [
-      "Object Oriented Frontend developer with three (3) years of experience building and maintaining responsive web App in the recruiting industry.",
+      "Object Oriented Frontend developer with four (4) years of experience building and maintaining responsive web App in the recruiting industry.",
 
       "As a developer, I try to create things that no one else has ever created before.",
       "I use algorithms, patterns and engineering principles to craft and mold products into something that customers will love",

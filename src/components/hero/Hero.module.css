@@ -27,10 +27,6 @@
   font-weight: bold;
 }
 
-.sliding {
-  display: none;
-}
-
 .hero_left_div h1 {
   font-size: 3rem;
   font-family: "Alfa Slab One";
@@ -55,7 +51,7 @@
   -webkit-text-stroke: 1px maroon;
 }
 
-.hero_left_div h1:hover::before {
+.hover::before {
   width: 100%;
   filter: drop-shadow(0 0 25px blue);
 }

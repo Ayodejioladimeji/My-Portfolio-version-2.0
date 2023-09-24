@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useState } from "react";
 // PACKAGES
 import Typewriter from "typewriter-effect";
 import Aos from "aos";
@@ -17,10 +17,16 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   const [state] = useContext(Context);
   const { nav } = state;
+  // const [start, setStart] = useState()
+  const [callback, setCallback] = useState(false);
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
+
+  setTimeout(() => {
+    setCallback(!callback);
+  }, 5000);
 
   return (
     <>
@@ -45,15 +51,6 @@ const Hero = () => {
             >
               Layobright<small>.</small>
               &nbsp;
-            </h1>
-
-            <h1
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-delay="1200"
-              className={styles.sliding}
-            >
-              Layobright
             </h1>
 
             <div
