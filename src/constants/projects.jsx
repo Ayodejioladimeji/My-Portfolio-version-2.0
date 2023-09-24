@@ -1,3 +1,5 @@
+import hapartment from "../assets/projects/hapa.png";
+
 const projects = [
   {
     id: "24",
@@ -34,8 +36,7 @@ const projects = [
       "We help users search for apartment easily and provide them with adequate information to help them make well-informed decisions.",
     github: "https://github.com/Ayodejioladimeji",
     url: "https://hapartment.org",
-    image:
-      "https://res.cloudinary.com/hapartment/image/upload/v1672670264/Hapartment/hapartment_n8j3s5.png",
+    image: hapartment,
     featured: true,
   },
   {
