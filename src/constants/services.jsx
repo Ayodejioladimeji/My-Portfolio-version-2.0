@@ -20,9 +20,7 @@ const services = [
     text: `Transform your online identity with captivating web design services. 
     I understand that the first impression matters, and your website's design is 
     the gateway to your brand. As a talented designer I blend creativity with functionality
-     to craft visually appealing and user-friendly websites. From concept to implementation,
-      I pay meticulous attention to every detail, ensuring your website not only stands out
-       but also converts visitors into loyal customers. Let's shape your digital aesthetics
+     to craft visually appealing and user-friendly websites. Let's shape your digital aesthetics
         and make your online presence a true work of art.`,
   },
   {
