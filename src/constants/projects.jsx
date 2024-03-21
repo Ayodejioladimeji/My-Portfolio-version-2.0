@@ -2,14 +2,39 @@ import hapartment from "../assets/projects/hapa.png";
 
 const projects = [
   {
+    id: "22",
+    order: 22,
+    title: "STUDIO4852",
+    stack: "NEXTJS,TYPESCRIPT, SASS ",
+    description:
+      "Bringing Your Vision to Life with Our Expertise for Limitless Digital Possibilities",
+    github: "https://github.com/Ayodejioladimeji",
+    url: "https://www.studio4852.com",
+    image:
+      "https://res.cloudinary.com/devsource/image/upload/v1711026504/Screenshot_2024-03-21_at_2.07.37_PM_l6nlqt.png",
+    featured: true,
+  },
+  {
+    id: "21",
+    order: 21,
+    title: "WealthHat",
+    stack: "NEXTJS,TYPESCRIPT,CONTEXT-API, SASS ",
+    description: "An investment advisor that’s focused on you",
+    github: "https://github.com/Ayodejioladimeji",
+    url: "https://www.wealthhat.com",
+    image:
+      "https://res.cloudinary.com/devsource/image/upload/v1711024564/Screenshot_2024-03-21_at_1.35.36_PM_hmv4ad.png",
+    featured: true,
+  },
+  {
     id: "24",
     order: 24,
     title: "Hapartment Mobile App",
     stack: "REACT NATIVE, REDUX ",
     description:
-      "App still under development -- Hapartment is bringing agents with renters together by providing them with the simplest and most cost-effective route to renting properties online",
+      "Hapartment is bringing agents with renters together by providing them with the simplest and most cost-effective route to renting properties online",
     github: "https://github.com/Ayodejioladimeji",
-    url: "https://expo.dev/accounts/layobright/projects/hapartment/builds/5d77b712-d3fd-48df-b667-c35901d56bac",
+    url: "https://play.google.com/store/apps/details?id=com.layobright.hapartment",
     image:
       "https://res.cloudinary.com/devsource/image/upload/v1672671077/hapartment/WhatsApp_Image_2023-01-02_at_3.49.21_PM_fb5gp8.jpg",
     featured: true,
@@ -28,10 +53,10 @@ const projects = [
     featured: true,
   },
   {
-    id: "22",
+    id: "27",
     order: 22,
     title: "Hapartment",
-    stack: "REACTJS, REDUX ",
+    stack: "NEXTJS,TYPESCRIPT,REACT-REDUX,REDUX,SASS",
     description:
       "We help users search for apartment easily and provide them with adequate information to help them make well-informed decisions.",
     github: "https://github.com/Ayodejioladimeji",
@@ -40,18 +65,18 @@ const projects = [
     featured: true,
   },
   {
-    id: "21",
-    order: 21,
-    title: "WealthHat",
-    stack:
-      "REACT,CONTEXT-API, CSS-MODULES, CHATWOOT,NODEJS, EXPRESS, HEROKU, DIGITAL OCEAN ",
-    description: "An investment advisor that’s focused on you",
+    id: "28",
+    order: 22,
+    title: "MedTech Solutions",
+    stack: "NEXTJS,TYPESCRIPT,SASS ",
+    description:
+      "Empowering patients, enabling global interoperability of medical data, and strengthening international healthcare collaborating and governance through our secure and digitised ecosystem",
     github: "https://github.com/Ayodejioladimeji",
-    url: "https://wealthhat.com",
-    image:
-      "https://res.cloudinary.com/devsource/image/upload/v1656528835/portfolio/wealth_mw1qcj.png",
+    url: "https://hapartment.org",
+    image: `https://res.cloudinary.com/devsource/image/upload/v1711026585/Screenshot_2024-03-21_at_2.09.28_PM_gzj5ki.png`,
     featured: true,
   },
+
   {
     id: "20",
     order: 20,
