@@ -185,3 +185,31 @@
     padding: 1rem;
   }
 }
+
+/* the section of the tab */
+.project_tab{
+  width: 95vw;
+  margin: 0 auto;
+  max-width: 1170px; 
+  margin-bottom:70px;
+  display:flex;
+}
+
+.project_tab button{
+  background:transparent;
+  padding:15px 45px;
+  color:var(--primary);
+  border:1px solid transparent;
+  border-bottom:1px solid var(--primary);
+  font-family:var(--font-oxygen);
+  font-size:15px;
+  cursor: pointer;
+  transition:var(--transition);
+}
+
+.project_tab .active{
+  /* background:var(--hover); */
+  border:1px solid var(--hover);
+  border-bottom:0;
+  color:var(--hover)
+}
